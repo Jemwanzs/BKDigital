@@ -1102,12 +1102,6 @@ h4:hover {
 
 
 
-
-
-
-
-
-
 /*iPhone Style*/
 
 .iPhone {
@@ -1117,9 +1111,10 @@ h4:hover {
 
 .titleIP {
     margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.5em;
+    color: green;
     text-align: center;
+
 }
 
 .circle-progress-container {
@@ -1153,7 +1148,7 @@ h4:hover {
 
 .circle-progress-bar {
     fill: none;
-    stroke: #4caf50;
+    stroke: green;
     stroke-width: 10;
     stroke-dasharray: 282.6;
     /* Circumference of the circle */
@@ -1232,10 +1227,6 @@ text {
 
 
 
-
-
-
-
 /*-----samsung Style*/
 
 .samsung {
@@ -1245,8 +1236,8 @@ text {
 
 .titleSM {
     margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.5em;
+    color: orange;
     text-align: center;
 }
 
@@ -1359,8 +1350,6 @@ text {
 
 
 
-
-
 /*-----Huawei Style*/
 
 .huawei {
@@ -1370,8 +1359,8 @@ text {
 
 .titleHU {
     margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.5em;
+    color: purple;
     text-align: center;
 }
 
@@ -1406,7 +1395,7 @@ text {
 
 .circle-progress-bar3 {
     fill: none;
-    stroke: orange;
+    stroke: purple;
     stroke-width: 10;
     stroke-dasharray: 282.6;
     /* Circumference of the circle */
@@ -1484,8 +1473,6 @@ text {
 
 
 
-
-
 /*-----Oppo Style*/
 
 .Oppo {
@@ -1495,8 +1482,8 @@ text {
 
 .titleO {
     margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.5em;
+    color: rgb(13, 135, 139);
     text-align: center;
 }
 
@@ -1609,8 +1596,6 @@ text {
 
 
 
-
-
 /*-----REDMI Style*/
 
 .Redmi {
@@ -1620,134 +1605,8 @@ text {
 
 .titleR {
     margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
-    text-align: center;
-}
-
-.circle-progress-container5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-/* Stat Analysis Section */
-.statAnalysis5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.circle-progress5 {
-    width: 100px;
-    /* Default size, adjust as needed */
-    height: 100px;
-    transform: rotate(-90deg);
-}
-
-.circle-bg5 {
-    fill: none;
-    stroke: #ddd;
-    stroke-width: 10;
-}
-
-.circle-progress-bar5 {
-    fill: none;
-    stroke: rgb(13, 135, 139);
-    stroke-width: 10;
-    stroke-dasharray: 282.6;
-    /* Circumference of the circle */
-    stroke-dashoffset: 282.6;
-    /* Starts as 100% (hidden) */
-    transition: stroke-dashoffset 0.5s ease-in-out;
-}
-
-circle {
-    transition: stroke-dashoffset 0.5s;
-}
-
-text {
-    font-size: 20px;
-    fill: #333;
-    font-weight: bold;
-}
-
-#descriptionT5-text {
-    font-size: 16px;
-    color: #333;
-}
-
-.circle-progress-bg5 {
-    stroke-width: 10;
-}
-
-.circle-progress-text5 {
     font-size: 1.5em;
-}
-
-.descriptionT5 {
-    text-align: center;
-}
-
-.descriptionT5 p {
-    font-size: 1em;
-    margin: 5px 0;
-}
-
-/* Responsive Design for Small Screens for products circular bars */
-@media (max-width: 600px) {
-    .circle-progress-container5 {
-        margin-top: 0;
-    }
-
-    .circle-progress5 {
-        width: 80px;
-        /* Adjust size for smaller screens */
-        height: 80px;
-    }
-
-    .circle-progress-text5 {
-        font-size: 1.2em;
-        /* Adjust font size */
-    }
-
-    .titleR {
-        font-size: 1em;
-        /* Adjust font size */
-    }
-
-    .descriptionT5 p {
-        font-size: 0.9em;
-        /* Adjust font size for better readability */
-        margin: 10px 0;
-        /* Adjust margins for spacing */
-    }
-
-    /* Ensure the section itself is responsive */
-    .statAnalysis5 {
-        padding: 10px;
-    }
-}
-
-
-
-
-
-
-/*-----REDMI Style*/
-
-.Redmi {
-    margin-top: 50px;
-    background-color: #f9f9f9;
-}
-
-.titleR {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
+    color: rgb(47, 49, 153);
     text-align: center;
 }
 
@@ -1860,9 +1719,6 @@ text {
 
 
 
-
-
-
 /*-----ONEPLUS Style*/
 
 .onePlus {
@@ -1872,8 +1728,8 @@ text {
 
 .titleOP {
     margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
+    font-size: 1.5em;
+    color: rgb(39, 15, 24);
     text-align: center;
 }
 
