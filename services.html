@@ -163,16 +163,20 @@
         </div>
     </div>
 
+    <!--------menu toggle-->
     <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
         function menutoggle() {
-            var menuItems = document.getElementById("menuItems");
-            if (menuItems.style.maxHeight === "0px") {
-                menuItems.style.maxHeight = "200px";
-            } else {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "1000px";
+            }
+            else {
                 menuItems.style.maxHeight = "0px";
             }
         }
     </script>
+
 </body>
 
 </html>
