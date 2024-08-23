@@ -32,505 +32,572 @@
                 </nav>
                 <!--<a href="cart.html"><img src="images/shopping-bag1.png" width="30px" height="30px" alt="Cart"></a>-->
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                <!--SEARCHING-->
+                <div class="search-container">
+                    <span class="search-icon">&#x1F50D;</span> <!-- Search icon -->
+                    <select id="search-dropdown" class="search-dropdown">
+                        <option value="">Select an option</option>
+                        <option value="iphone">iPhone</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="huawei">Huawei</option>
+                        <option value="oppo">Oppo</option>
+                        <option value="oneplus">OnePlus</option>
+                        <option value="redmi">Redmi</option>
+                        <option value="..">..</option>
+                        <option value="services">Services</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
             </div>
         </div>
     </div>
 
     <!--products-->
-    <div class="iPhone">
-        <div class="container">
-            <section class="statAnalysis">
-                <div class="circle-progress-container">
-                    <svg class="circle-progress" viewBox="0 0 100 100">
-                        <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar" class="circle-progress-bar" cx="50" cy="50" r="45">
-                        </circle>
-                        <text id="circle-progress-text" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleW">iPhones</h2>
-                </div>
-                <div class="descriptionT">
-                    <p>Discover the Full Range of iPhones in Stock.</p>
-                    <p id="descriptionT-text">
-                        At BK Digital Solution, we offer the complete range of iPhones to meet your every need.</p>
-                </div>
-            </section>
+    <section id="iphonesection">
+        <div class="iPhone">
+            <div class="container">
+                <section class="statAnalysis">
+                    <div class="circle-progress-container">
+                        <svg class="circle-progress" viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar" class="circle-progress-bar" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleW">iPhones</h2>
+                    </div>
+                    <div class="descriptionT">
+                        <p>Discover the Full Range of iPhones in Stock.</p>
+                        <p id="descriptionT-text">
+                            At BK Digital Solution, we offer the complete range of iPhones to meet your every need.</p>
+                    </div>
+                </section>
 
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone9.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=iPhone&price=###">
-                        <h4>iPhone ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone9.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=iPhone&price=###">
+                            <h4>iPhone ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone7.jpg"
-                            alt="Rolex Daytona" class="circular-img"></a>
-                    <a href="productDetails.html?name=iPhone&price=###">
-                        <h4>iPhone ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone7.jpg"
+                                alt="Rolex Daytona" class="circular-img"></a>
+                        <a href="productDetails.html?name=iPhone&price=###">
+                            <h4>iPhone ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone6.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=iPhone&price=###">
-                        <h4>iPhone ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone6.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=iPhone&price=###">
+                            <h4>iPhone ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone8.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=iPhone&price=###">
-                        <h4>iPhone ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone8.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=iPhone&price=###">
+                            <h4>iPhone ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="samsung">
-        <div class="container">
-            <section class="statAnalysis2">
-                <div class="circle-progress-container2">
-                    <svg class="circle-progress2" viewBox="0 0 100 100">
-                        <circle class="circle-bg2" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar2" class="circle-progress-bar2" cx="50" cy="50" r="45">
-                        </circle>
-                        <text id="circle-progress-text2" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleP">Samsung Phones</h2>
-                </div>
-                <div class="descriptionT2">
-                    <P>Unleash Innovation with Our Premium Samsung Phones!</P>
-                    <p id="descriptionT2-text">Transform the way you connect and interact with our premium
-                        collection of
-                        Samsung phones. Designed for those who demand
-                        excellence, our Samsung range delivers exceptional performance, cutting-edge features, and
-                        stunning design.</p>
-                </div>
-            </section>
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung1.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Samsung&price=###">
-                        <h4>Samsung ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung3.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Samsung&price=###">
-                        <h4>Samsung ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>ss
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung4.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Samsung&price=###">
-                        <h4>Samsung ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung5.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Samsung&price=###">
-                        <h4>Samsung ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
+    </section>
 
-        </div>
-    </div>
-    <div class="huawei">
-        <div class="container">
-            <section class="statAnalysis3">
-                <div class="circle-progress-container3">
-                    <svg class="circle-progress3" viewBox="0 0 100 100">
-                        <circle class="circle-bg3" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar3" class="circle-progress-bar3" cx="50" cy="50" r="45">
-                        </circle>
-                        <text id="circle-progress-text3" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleN">Huawei Phones</h2>
+    <section id="samsungsection">
+        <div class="samsung">
+            <div class="container">
+                <section class="statAnalysis2">
+                    <div class="circle-progress-container2">
+                        <svg class="circle-progress2" viewBox="0 0 100 100">
+                            <circle class="circle-bg2" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar2" class="circle-progress-bar2" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text2" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleP">Samsung Phones</h2>
+                    </div>
+                    <div class="descriptionT2">
+                        <P>Unleash Innovation with Our Premium Samsung Phones!</P>
+                        <p id="descriptionT2-text">Transform the way you connect and interact with our premium
+                            collection of
+                            Samsung phones. Designed for those who demand
+                            excellence, our Samsung range delivers exceptional performance, cutting-edge features, and
+                            stunning design.</p>
+                    </div>
+                </section>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung1.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Samsung&price=###">
+                            <h4>Samsung ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung3.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Samsung&price=###">
+                            <h4>Samsung ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>ss
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung4.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Samsung&price=###">
+                            <h4>Samsung ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung5.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Samsung&price=###">
+                            <h4>Samsung ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="descriptionT3">
-                    <P>Elevate Your Experience with Our Huawei Phones!</P>
-                    <p id="descriptionT3-text">Discover the perfect fusion of style and technology with our
-                        exclusive
-                        collection of Huawei phones. Designed for those
-                        who appreciate sophistication and high performance, our Huawei range offers remarkable
-                        features,
-                        sleek designs, and
-                        cutting-edge innovation.</p>
-                </div>
-            </section>
 
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei6.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Huawei&price=###">
-                        <h4>Huawei ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei2.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Huawei&price=###">
-                        <h4>Huawei ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei3.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Huawei&price=###">
-                        <h4>Huawei ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei7.png"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Huawei&price=###">
-                        <h4>Huawei ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="Oppo">
-        <div class="container">
-            <section class="statAnalysis4">
-                <div class="circle-progress-container4">
-                    <svg class="circle-progress4" viewBox="0 0 100 100">
-                        <circle class="circle-bg4" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar4" class="circle-progress-bar4" cx="50" cy="50" r="45">
-                        </circle>
-                        <text id="circle-progress-text4" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleO">Oppo Phones</h2>
-                </div>
-                <div class="descriptionT4">
-                    <P>Unleash Innovation with Our Oppo Phones!</P>
-                    <p id="descriptionT4-text">Transform your mobile experience with our exclusive range of Oppo
-                        phones.
-                        Known for their sleek designs and advanced
-                        technology, Oppo phones offer an unmatched combination of style and performance.</p>
-                </div>
-            </section>
+    <section id="huaweisection">
+        <div class="huawei">
+            <div class="container">
+                <section class="statAnalysis3">
+                    <div class="circle-progress-container3">
+                        <svg class="circle-progress3" viewBox="0 0 100 100">
+                            <circle class="circle-bg3" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar3" class="circle-progress-bar3" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text3" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleN">Huawei Phones</h2>
+                    </div>
+                    <div class="descriptionT3">
+                        <P>Elevate Your Experience with Our Huawei Phones!</P>
+                        <p id="descriptionT3-text">Discover the perfect fusion of style and technology with our
+                            exclusive
+                            collection of Huawei phones. Designed for those
+                            who appreciate sophistication and high performance, our Huawei range offers remarkable
+                            features,
+                            sleek designs, and
+                            cutting-edge innovation.</p>
+                    </div>
+                </section>
 
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo1.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Oppo&price=###">
-                        <h4>Oppo ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei4.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Huawei&price=###">
+                            <h4>Huawei ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo2.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Oppo&price=###">
-                        <h4>Oppo ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei2.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Huawei&price=###">
+                            <h4>Huawei ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo3.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Oppo&price=###">
-                        <h4>Oppo ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei3.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Huawei&price=###">
+                            <h4>Huawei ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo5.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Oppo&price=###">
-                        <h4>Oppo ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei6.png"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Huawei&price=###">
+                            <h4>Huawei ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <section id="opposection">
+        <div class="Oppo">
+            <div class="container">
+                <section class="statAnalysis4">
+                    <div class="circle-progress-container4">
+                        <svg class="circle-progress4" viewBox="0 0 100 100">
+                            <circle class="circle-bg4" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar4" class="circle-progress-bar4" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text4" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleO">Oppo Phones</h2>
+                    </div>
+                    <div class="descriptionT4">
+                        <P>Unleash Innovation with Our Oppo Phones!</P>
+                        <p id="descriptionT4-text">Transform your mobile experience with our exclusive range of Oppo
+                            phones.
+                            Known for their sleek designs and advanced
+                            technology, Oppo phones offer an unmatched combination of style and performance.</p>
+                    </div>
+                </section>
 
-    <div class="Redmi">
-        <div class="container">
-            <section class="statAnalysis5">
-                <div class="circle-progress-container5">
-                    <svg class="circle-progress5" viewBox="0 0 100 100">
-                        <circle class="circle-bg5" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar5" class="circle-progress-bar5" cx="50" cy="50" r="45">
-                        </circle>
-                        <text id="circle-progress-text5" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleR">Redmi Phones</h2>
-                </div>
-                <div class="descriptionT5">
-                    <P>Elevate Your Mobile Experience with Redmi Phones!</P>
-                    <p id="descriptionT5-text">Discover the perfect blend of performance and affordability with our
-                        extensive range of Redmi phones. Designed to
-                        deliver exceptional value, Redmi phones offer powerful features and sleek designs that cater
-                        to
-                        all your needs.</p>
-                </div>
-            </section>
-
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi1.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Redmi&price=###">
-                        <h4>Redmi ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo1.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Oppo&price=###">
+                            <h4>Oppo ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi2.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Redmi&price=###">
-                        <h4>Redmi ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo2.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Oppo&price=###">
+                            <h4>Oppo ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi3.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Redmi&price=###">
-                        <h4>Redmi ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo3.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Oppo&price=###">
+                            <h4>Oppo ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi4.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Redmi&price=###">
-                        <h4>Redmi ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo5.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Oppo&price=###">
+                            <h4>Oppo ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <section id="redmisection">
+        <div class="Redmi">
+            <div class="container">
+                <section class="statAnalysis5">
+                    <div class="circle-progress-container5">
+                        <svg class="circle-progress5" viewBox="0 0 100 100">
+                            <circle class="circle-bg5" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar5" class="circle-progress-bar5" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text5" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleR">Redmi Phones</h2>
+                    </div>
+                    <div class="descriptionT5">
+                        <P>Elevate Your Mobile Experience with Redmi Phones!</P>
+                        <p id="descriptionT5-text">Discover the perfect blend of performance and affordability with our
+                            extensive range of Redmi phones. Designed to
+                            deliver exceptional value, Redmi phones offer powerful features and sleek designs that cater
+                            to
+                            all your needs.</p>
+                    </div>
+                </section>
 
-    <div class="onePlus">
-        <div class="container">
-            <section class="statAnalysis6">
-                <div class="circle-progress-container6">
-                    <svg class="circle-progress6" viewBox="0 0 100 100">
-                        <circle class="circle-bg6" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar6" class="circle-progress-bar6" cx="50" cy="50" r="45">
-                        </circle>
-                        <text id="circle-progress-text6" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleOP">OnePlus Phones</h2>
-                </div>
-                <div class="descriptionT5">
-                    <P>Elevate Your Mobile Experience with Redmi Phones!</P>
-                    <p id="descriptionT5-text">Experience the pinnacle of performance and design with our exclusive
-                        collection of OnePlus phones. Renowned for their
-                        speed, innovation, and premium build quality, OnePlus devices offer an unmatched smartphone
-                        experience.</p>
-                </div>
-            </section>
-
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus1.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=OnePlus&price=###">
-                        <h4>OnePlus ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi1.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Redmi&price=###">
+                            <h4>Redmi ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus2.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=OnePlus&price=###">
-                        <h4>OnePlus ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi2.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Redmi&price=###">
+                            <h4>Redmi ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus3.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=OnePlus&price=###">
-                        <h4>OnePlus ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi3.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Redmi&price=###">
+                            <h4>Redmi ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus4.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=OnePlus&price=###">
-                        <h4>OnePlus ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi4.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Redmi&price=###">
+                            <h4>Redmi ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="oneplussection">
+        <div class="onePlus">
+            <div class="container">
+                <section class="statAnalysis6">
+                    <div class="circle-progress-container6">
+                        <svg class="circle-progress6" viewBox="0 0 100 100">
+                            <circle class="circle-bg6" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar6" class="circle-progress-bar6" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text6" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleOP">OnePlus Phones</h2>
+                    </div>
+                    <div class="descriptionT5">
+                        <P>Elevate Your Mobile Experience with Redmi Phones!</P>
+                        <p id="descriptionT5-text">Experience the pinnacle of performance and design with our exclusive
+                            collection of OnePlus phones. Renowned for their
+                            speed, innovation, and premium build quality, OnePlus devices offer an unmatched smartphone
+                            experience.</p>
+                    </div>
+                </section>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus1.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=OnePlus&price=###">
+                            <h4>OnePlus ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus2.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=OnePlus&price=###">
+                            <h4>OnePlus ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus3.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=OnePlus&price=###">
+                            <h4>OnePlus ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus4.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=OnePlus&price=###">
+                            <h4>OnePlus ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---other products--->
+    <section id="otherssection">
+        <div class="offer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="productDetails.html?name=Mobile%Phone&price=###"><img src="images/iphone2.jpg"
+                                class="circular-img4"></a>
+                        <a href="productDetails.html?name=Mobile%Phone&price=###">
+                            <h4>Tecno | Infinix</h4>
+                        </a>
+                        <div class=" rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively Available!</p>
+                        <H1>Tecno | Infinix | Itel | Xtigi </H1>
+                        <small>Unlock a world of innovation and style with our exclusive collection of Tecno, Infinix,
+                            Itel,
+                            Xtigi, and many more
+                            top-tier phones.<br /><br />These brands are renowned for delivering cutting-edge
+                            technology,
+                            sleek designs, and exceptional
+                            performance at unbeatable prices. Explore
+                            our exclusive range
+                            today and experience the perfect blend of functionality and flair.</small>
+                        <a href="productDetails.html?name=Mobile%Phone" class="btn">Buy Now &#8594;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <div class="footer">
@@ -840,6 +907,50 @@
             }
         });
     </script>
+
+
+    <!--js for searching-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchIcon = document.querySelector(".search-icon");
+            const searchContainer = document.querySelector(".search-container");
+            const searchDropdown = document.getElementById("search-dropdown");
+
+            // Toggle dropdown visibility when search icon is clicked
+            searchIcon.addEventListener("click", function () {
+                searchContainer.classList.toggle("active");
+            });
+
+            // Handle navigation when a dropdown option is selected
+            searchDropdown.addEventListener("change", function () {
+                const selectedValue = this.value;
+
+                if (selectedValue === "services") {
+                    // Redirect to services.html when "Services" is selected
+                    window.location.href = "services.html";
+                } else if (selectedValue) {
+                    const section = document.getElementById(selectedValue + "section");
+                    if (section) {
+                        // Fast and seamless scrolling
+                        window.scrollTo({
+                            top: section.offsetTop,
+                            behavior: 'auto' // Instant scroll without delay
+                        });
+                    }
+                }
+            });
+
+            // Close the dropdown if clicked outside
+            document.addEventListener("click", function (event) {
+                if (!searchContainer.contains(event.target)) {
+                    searchContainer.classList.remove("active");
+                }
+            });
+        });
+    </script>
+
+
+
 </body>
 
 </html>

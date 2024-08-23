@@ -1574,6 +1574,15 @@ text {
 
 
 /* ---pages screen size check----*/
+.fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-out.fade {
+    opacity: 0;
+}
+
 @media only screen and (max-width: 600px) {
     #homepage {
         display: none;
@@ -1593,6 +1602,54 @@ text {
         display: none;
     }
 }
+
+
+
+
+/*SEARCH-----------------------*/
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-dropdown {
+    display: none;
+    /* Initially hidden */
+    position: absolute;
+    top: 30px;
+    /* Adjust based on your design */
+    right: 0;
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.search-container.active .search-dropdown {
+    display: block;
+    /* Show dropdown when active */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
