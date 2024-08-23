@@ -1102,19 +1102,25 @@
                 }
             });
         </script>
+
+        <!--js toggle / redirect pages according to screen sizes-->
+
         <script>
-            function redirectBasedOnScreenWidth() {
-                if (window.innerWidth <= 600) {
+            function redirectToServices() {
+                // Check if the user is on a small screen and has not been redirected before
+                if (window.innerWidth <= 1000 && !sessionStorage.getItem('redirectedToServices')) {
+                    // Redirect to services.html
                     window.location.href = 'services.html';
+                    // Store a flag in sessionStorage to prevent repeated redirects
+                    sessionStorage.setItem('redirectedToServices', 'true');
                 }
             }
 
             // Check screen width on page load
-            window.onload = redirectBasedOnScreenWidth;
-
-            // Optionally, check again if the user resizes the window
-            window.onresize = redirectBasedOnScreenWidth;
+            window.onload = redirectToServices;
         </script>
+
+
 
     </body>
 </div>
