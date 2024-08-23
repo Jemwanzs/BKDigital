@@ -343,7 +343,7 @@ small {
     overflow: hidden;
     width: 60%;
     height: 150px;
-    margin: 0 auto 100px;
+    margin: 40px auto 10px;
     background: fixed;
 }
 
@@ -2131,7 +2131,7 @@ text {
 
 
 /* Testimonials Container */
-* Testimonials Container */ .testmonial {
+.testmonial {
     padding: 40px 0;
     background-color: #f9f9f9;
 }
@@ -2145,14 +2145,12 @@ text {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    /* Ensure testimonials are in one row */
-    overflow-x: auto;
-    /* Allow horizontal scrolling on smaller screens */
+    /* Ensure testimonials are in one row on larger screens */
 }
 
 .testmonial .col-3 {
     flex: 0 0 30%;
-    /* Each testimonial takes up 30% of the row */
+    /* Each testimonial takes up 30% of the row on larger screens */
     margin: 0 10px;
     /* Add spacing between testimonials */
     padding: 20px;
@@ -2160,6 +2158,8 @@ text {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 20px;
+    /* Add margin-bottom for spacing in smaller screens */
 }
 
 /* Star Rating */
@@ -2177,25 +2177,20 @@ text {
     object-fit: cover;
 }
 
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-    .testmonial .col-3 {
-        flex: 0 0 45%;
-        /* Each testimonial takes up 45% of the row on medium screens */
-    }
-}
-
+/* Media Query for Slim or Small Screens */
 @media (max-width: 600px) {
     .testmonial .row {
-        flex-wrap: nowrap;
-        /* Ensure testimonials stay in one row */
+        flex-wrap: wrap;
+        /* Allow wrapping to create rows */
+        justify-content: center;
+        /* Center testimonials in each row */
     }
 
     .testmonial .col-3 {
-        flex: 0 0 80%;
-        /* Each testimonial takes up 80% of the row on small screens */
-        margin: 0 5px;
-        /* Reduce margin for smaller screens */
+        flex: 0 0 100%;
+        /* Each testimonial takes up 100% of the row on small screens */
+        max-width: 300px;
+        /* Optional: Limit the width for readability */
     }
 }
 
