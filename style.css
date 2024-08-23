@@ -508,6 +508,14 @@ select:focus {
 }
 
 /*----PRODUCT DETAILS STYLING------*/
+
+.headProd h1 {
+    color: #1765be;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 30px;
+}
+
 .product-details {
     margin-top: 50px;
 }
