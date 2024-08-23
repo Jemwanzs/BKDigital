@@ -756,6 +756,34 @@ form a {
     color: orange;
 }
 
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+
+    .about-1,
+    .about-2,
+    .about-3 {
+        flex-basis: 100%;
+        /* Full width for each section */
+        margin-top: 20px;
+        /* Reduce top margin for compact layout */
+        margin-bottom: 20px;
+        /* Reduce bottom margin */
+        text-align: center;
+        /* Ensure text is centered */
+    }
+
+    .about-1,
+    .about-2,
+    .about-3 h2 {
+        font-size: 18px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .about-2 {
+        padding: 0 10px;
+        /* Add some padding for better spacing */
+    }
+}
 
 /* Contact Form */
 
@@ -847,6 +875,12 @@ form a {
     background-color: green;
     margin: 5px auto 10px auto;
     /* Center the underline */
+}
+
+.mobileNo {
+    font-size: large;
+    color: maroon;
+    font-weight: bold;
 }
 
 /* Responsive Design for Small Screens */
