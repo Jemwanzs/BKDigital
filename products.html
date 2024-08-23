@@ -55,11 +55,10 @@
     </div>
 
     <!--products-->
-
+    <div class="headProd">
+        <h1>Our Products</h1>
+    </div>
     <section id="iphonesection">
-        <div class="headProd">
-            <h1>Our Products</h1>
-        </div>
         <div class="iPhone">
             <div class="container">
                 <section class="statAnalysis">
@@ -630,85 +629,6 @@
             <p class="copyright">© 2024 JMS | Fredy-BK Digital. All Rights Reserved.</p>
         </div>
     </div>
-
-    <!-- iphones-->
-    <script>
-        document.addEventListener('scroll', function () {
-            const section = document.querySelector('.statAnalysis');
-            const progressBar = document.getElementById('circle-progress-bar');
-            const progressText = document.getElementById('circle-progress-text');
-            const descriptionText = document.getElementById('descriptionT-text');
-
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const sectionHeight = section.offsetHeight;
-            const windowHeight = window.innerHeight;
-
-            // Calculate how much of the section is in view
-            let percentage = 0;
-            if (sectionTop < windowHeight && sectionBottom > 0) {
-                if (sectionTop >= 0) {
-                    // Section is partially in view from the top
-                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 75;
-                } else if (sectionBottom <= windowHeight) {
-                    // Section is fully in view
-                    percentage = 75;
-                } else {
-                    // Section is partially in view from the bottom
-                    percentage = ((sectionBottom) / sectionHeight) * 75;
-                }
-            }
-            percentage = Math.max(0, Math.min(75, percentage));
-
-            const radius = 45;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (percentage / 100 * circumference);
-
-            progressBar.style.strokeDashoffset = offset;
-            progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; step into the future with style and sophistication by choosing from our exclusive collection of iPhones. Designed to impress, our range ensures that you make a bold statement wherever you go.`;
-        });
-    </script>
-
-    <!--samsung-->
-
-    <script>
-        document.addEventListener('scroll', function () {
-            const section = document.querySelector('.statAnalysis2');
-            const progressBar = document.getElementById('circle-progress-bar2');
-            const progressText = document.getElementById('circle-progress-text2');
-            const descriptionText = document.getElementById('descriptionT2-text');
-
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const sectionHeight = section.offsetHeight;
-            const windowHeight = window.innerHeight;
-
-            // Calculate how much of the section is in view
-            let percentage = 0;
-            if (sectionTop < windowHeight && sectionBottom > 0) {
-                if (sectionTop >= 0) {
-                    // Section is partially in view from the top
-                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 80;
-                } else if (sectionBottom <= windowHeight) {
-                    // Section is fully in view
-                    percentage = 80;
-                } else {
-                    // Section is partially in view from the bottom
-                    percentage = ((sectionBottom) / sectionHeight) * 80;
-                }
-            }
-            percentage = Math.max(0, Math.min(80, percentage));
-
-            const radius = 45;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (percentage / 100 * circumference);
-
-            progressBar.style.strokeDashoffset = offset;
-            progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; transform the way you connect and interact with our premium collection of Samsung phones.`;
-        });
-    </script>
 
     <!-- iphones-->
     <script>
