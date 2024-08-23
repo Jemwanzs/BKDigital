@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BK Online Store</title>
+    <title>Products</title>
+    <link rel="preload" href="important-script.js" as="script">
+    <link rel="prefetch" href="next-page.html">
+
     <link rel="stylesheet" href="style.css"> <!-- connect to the styling css-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -63,12 +66,11 @@
                             </circle>
                             <text id="circle-progress-text" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
                         </svg>
-                        <h2 class="titleW">iPhones</h2>
+                        <h2 class="titleIP">iPhones</h2>
                     </div>
                     <div class="descriptionT">
-                        <p>Discover the Full Range of iPhones in Stock.</p>
                         <p id="descriptionT-text">
-                            At BK Digital Solution, we offer the complete range of iPhones to meet your every need.</p>
+                            Discover our full range of iPhones, crafted to meet all your mobile needs.</p>
                     </div>
                 </section>
 
@@ -145,15 +147,11 @@
                             </circle>
                             <text id="circle-progress-text2" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
                         </svg>
-                        <h2 class="titleP">Samsung Phones</h2>
+                        <h2 class="titleSM">Samsung Phones</h2>
                     </div>
                     <div class="descriptionT2">
-                        <P>Unleash Innovation with Our Premium Samsung Phones!</P>
-                        <p id="descriptionT2-text">Transform the way you connect and interact with our premium
-                            collection of
-                            Samsung phones. Designed for those who demand
-                            excellence, our Samsung range delivers exceptional performance, cutting-edge features, and
-                            stunning design.</p>
+                        <p id="descriptionT2-text">
+                            Find the complete range of Samsung mobile phones, tailored to meet every need.</p>
                     </div>
                 </section>
                 <div class="row">
@@ -230,17 +228,11 @@
                             </circle>
                             <text id="circle-progress-text3" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
                         </svg>
-                        <h2 class="titleN">Huawei Phones</h2>
+                        <h2 class="titleHU">Huawei Phones</h2>
                     </div>
                     <div class="descriptionT3">
-                        <P>Elevate Your Experience with Our Huawei Phones!</P>
-                        <p id="descriptionT3-text">Discover the perfect fusion of style and technology with our
-                            exclusive
-                            collection of Huawei phones. Designed for those
-                            who appreciate sophistication and high performance, our Huawei range offers remarkable
-                            features,
-                            sleek designs, and
-                            cutting-edge innovation.</p>
+                        <p id="descriptionT3-text">
+                            Explore our full range of Huawei mobile phones, designed to meet all your needs.</p>
                     </div>
                 </section>
 
@@ -320,11 +312,8 @@
                         <h2 class="titleO">Oppo Phones</h2>
                     </div>
                     <div class="descriptionT4">
-                        <P>Unleash Innovation with Our Oppo Phones!</P>
-                        <p id="descriptionT4-text">Transform your mobile experience with our exclusive range of Oppo
-                            phones.
-                            Known for their sleek designs and advanced
-                            technology, Oppo phones offer an unmatched combination of style and performance.</p>
+                        <p id="descriptionT4-text">
+                            Discover our comprehensive selection of Oppo mobile phones to fulfill every requirement.</p>
                     </div>
                 </section>
 
@@ -404,12 +393,8 @@
                         <h2 class="titleR">Redmi Phones</h2>
                     </div>
                     <div class="descriptionT5">
-                        <P>Elevate Your Mobile Experience with Redmi Phones!</P>
-                        <p id="descriptionT5-text">Discover the perfect blend of performance and affordability with our
-                            extensive range of Redmi phones. Designed to
-                            deliver exceptional value, Redmi phones offer powerful features and sleek designs that cater
-                            to
-                            all your needs.</p>
+                        <p id="descriptionT5-text">
+                            We offer an extensive lineup of Redmi phones to cover all your needs.</p>
                     </div>
                 </section>
 
@@ -489,11 +474,8 @@
                         <h2 class="titleOP">OnePlus Phones</h2>
                     </div>
                     <div class="descriptionT5">
-                        <P>Elevate Your Mobile Experience with Redmi Phones!</P>
-                        <p id="descriptionT5-text">Experience the pinnacle of performance and design with our exclusive
-                            collection of OnePlus phones. Renowned for their
-                            speed, innovation, and premium build quality, OnePlus devices offer an unmatched smartphone
-                            experience.</p>
+                        <p id="descriptionT5-text">
+                            Our collection of OnePlus mobile phones covers all your needs.</p>
                     </div>
                 </section>
 
@@ -724,6 +706,83 @@
         });
     </script>
 
+    <!-- iphones-->
+    <script>
+        document.addEventListener('scroll', function () {
+            const section = document.querySelector('.statAnalysis');
+            const progressBar = document.getElementById('circle-progress-bar');
+            const progressText = document.getElementById('circle-progress-text');
+            const descriptionText = document.getElementById('descriptionT-text');
+
+            const sectionTop = section.getBoundingClientRect().top;
+            const sectionBottom = section.getBoundingClientRect().bottom;
+            const sectionHeight = section.offsetHeight;
+            const windowHeight = window.innerHeight;
+
+            // Calculate how much of the section is in view
+            let percentage = 0;
+            if (sectionTop < windowHeight && sectionBottom > 0) {
+                if (sectionTop >= 0) {
+                    // Section is partially in view from the top
+                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 75;
+                } else if (sectionBottom <= windowHeight) {
+                    // Section is fully in view
+                    percentage = 75;
+                } else {
+                    // Section is partially in view from the bottom
+                    percentage = ((sectionBottom) / sectionHeight) * 75;
+                }
+            }
+            percentage = Math.max(0, Math.min(75, percentage));
+
+            const radius = 45;
+            const circumference = 2 * Math.PI * radius;
+            const offset = circumference - (percentage / 100 * circumference);
+
+            progressBar.style.strokeDashoffset = offset;
+            progressText.textContent = `${Math.round(percentage)}%`;
+        });
+    </script>
+
+    <!--samsung-->
+
+    <script>
+        document.addEventListener('scroll', function () {
+            const section = document.querySelector('.statAnalysis2');
+            const progressBar = document.getElementById('circle-progress-bar2');
+            const progressText = document.getElementById('circle-progress-text2');
+            const descriptionText = document.getElementById('descriptionT2-text');
+
+            const sectionTop = section.getBoundingClientRect().top;
+            const sectionBottom = section.getBoundingClientRect().bottom;
+            const sectionHeight = section.offsetHeight;
+            const windowHeight = window.innerHeight;
+
+            // Calculate how much of the section is in view
+            let percentage = 0;
+            if (sectionTop < windowHeight && sectionBottom > 0) {
+                if (sectionTop >= 0) {
+                    // Section is partially in view from the top
+                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 80;
+                } else if (sectionBottom <= windowHeight) {
+                    // Section is fully in view
+                    percentage = 80;
+                } else {
+                    // Section is partially in view from the bottom
+                    percentage = ((sectionBottom) / sectionHeight) * 80;
+                }
+            }
+            percentage = Math.max(0, Math.min(80, percentage));
+
+            const radius = 45;
+            const circumference = 2 * Math.PI * radius;
+            const offset = circumference - (percentage / 100 * circumference);
+
+            progressBar.style.strokeDashoffset = offset;
+            progressText.textContent = `${Math.round(percentage)}%`;
+        });
+    </script>
+
     <!--Huawei-->
     <script>
         document.addEventListener('scroll', function () {
@@ -759,7 +818,6 @@
 
             progressBar.style.strokeDashoffset = offset;
             progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; discover the perfect fusion of style and technology with our exclusive collection of Huawei phones. Designed for those who appreciate sophistication and high performance, our Huawei range offers remarkable features, sleek designs, and cutting-edge innovation.`;
         });
     </script>
 
@@ -798,7 +856,6 @@
 
             progressBar.style.strokeDashoffset = offset;
             progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; transform their mobile experience with our exclusive range of Oppo phones. Known for their sleek designs and advanced technology, Oppo phones offer an unmatched combination of style and performance.`;
         });
     </script>
 
@@ -837,11 +894,10 @@
 
             progressBar.style.strokeDashoffset = offset;
             progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; discover the perfect blend of performance and affordability with our extensive range of Redmi phones. Designed to deliver exceptional value, Redmi phones offer powerful features and sleek designs that cater to all user needs.`;
         });
     </script>
 
-    <!--Redmi-->
+    <!--OnePlus-->
     <script>
         document.addEventListener('scroll', function () {
             const section = document.querySelector('.statAnalysis6');
@@ -876,37 +932,8 @@
 
             progressBar.style.strokeDashoffset = offset;
             progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; want to experience the pinnacle of performance and design with our exclusive collection of OnePlus phones. Renowned for their speed, innovation, and premium build quality, OnePlus devices offer an unmatched smartphone experience.`;
         });
     </script>
-
-    <!--------menu toggle-->
-    <script>
-        var menuItems = document.getElementById("menuItems");
-        menuItems.style.maxHeight = "0px";
-        function menutoggle() {
-            if (menuItems.style.maxHeight == "0px") {
-                menuItems.style.maxHeight = "1000px";
-            }
-            else {
-                menuItems.style.maxHeight = "0px";
-            }
-        }
-    </script>
-
-    <!--code copy protection <right click and other chortcuts dissabled-->
-    <script>
-        document.addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.ctrlKey && (e.key === 'u' || e.key === 'i' || e.key === 'c')) {
-                e.preventDefault();
-            }
-        });
-    </script>
-
 
     <!--js for searching-->
     <script>
@@ -948,7 +975,32 @@
         });
     </script>
 
+    <!--------menu toggle-->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "1000px";
+            }
+            else {
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 
+    <!--code copy protection <right click and other chortcuts dissabled
+    <script>
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'i' || e.key === 'c')) {
+                e.preventDefault();
+            }
+        });
+    </script>-->
 
 </body>
 

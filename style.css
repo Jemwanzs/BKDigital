@@ -1083,54 +1083,47 @@ h4:hover {
 }
 
 
+
+
+
+
+
+
+
 /*iPhone Style*/
+
 .iPhone {
     margin-top: 50px;
     background-color: #f9f9f9;
 }
 
-.headProducts {
-    font-weight: bold;
-}
-
-.titleW {
+.titleIP {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
     text-align: center;
-    margin: 0 auto 50px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-}
-
-.titleW::after {
-    content: '';
-    background: green;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.statAnalysis {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 .circle-progress-container {
-    width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Stat Analysis Section */
+.statAnalysis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .circle-progress {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    /* Default size, adjust as needed */
+    height: 100px;
     transform: rotate(-90deg);
 }
 
@@ -1161,59 +1154,104 @@ text {
     font-weight: bold;
 }
 
-.descriptionT {
-    width: 50%;
-}
-
 #descriptionT-text {
     font-size: 16px;
     color: #333;
 }
 
-/*-------------samsung Style---------*/
-.samsung {
-    margin-top: 100px;
-    background-color: #fff;
+.circle-progress-bg {
+    stroke-width: 10;
 }
 
-.titleP {
+.circle-progress-text {
+    font-size: 1.5em;
+}
+
+.descriptionT {
     text-align: center;
-    margin: 0 auto 50px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
 }
 
-.titleP::after {
-    content: '';
-    background: orange;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.descriptionT p {
+    font-size: 1em;
+    margin: 5px 0;
 }
 
-.statAnalysis2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 8px;
+/* Responsive Design for Small Screens for products circular bars */
+@media (max-width: 600px) {
+    .circle-progress-container {
+        margin-top: 0;
+    }
+
+    .circle-progress {
+        width: 80px;
+        /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    .circle-progress-text {
+        font-size: 1.2em;
+        /* Adjust font size */
+    }
+
+    .titleIP {
+        font-size: 1em;
+        /* Adjust font size */
+    }
+
+    .descriptionT p {
+        font-size: 0.9em;
+        /* Adjust font size for better readability */
+        margin: 10px 0;
+        /* Adjust margins for spacing */
+    }
+
+    /* Ensure the section itself is responsive */
+    .statAnalysis {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+/*-----samsung Style*/
+
+.samsung {
+    margin-top: 50px;
+    background-color: #f9f9f9;
+}
+
+.titleSM {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
 }
 
 .circle-progress-container2 {
-    width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Stat Analysis Section */
+.statAnalysis2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .circle-progress2 {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    /* Default size, adjust as needed */
+    height: 100px;
     transform: rotate(-90deg);
 }
 
@@ -1244,59 +1282,101 @@ text {
     font-weight: bold;
 }
 
-.descriptionT2 {
-    width: 50%;
-}
-
 #descriptionT2-text {
     font-size: 16px;
     color: #333;
 }
 
-/*Huawei Style*/
+.circle-progress-bg2 {
+    stroke-width: 10;
+}
+
+.circle-progress-text2 {
+    font-size: 1.5em;
+}
+
+.descriptionT2 {
+    text-align: center;
+}
+
+.descriptionT2 p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsive Design for Small Screens for products circular bars */
+@media (max-width: 600px) {
+    .circle-progress-container2 {
+        margin-top: 0;
+    }
+
+    .circle-progress2 {
+        width: 80px;
+        /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    .circle-progress-text2 {
+        font-size: 1.2em;
+        /* Adjust font size */
+    }
+
+    .titleSM {
+        font-size: 1em;
+        /* Adjust font size */
+    }
+
+    .descriptionT2 p {
+        font-size: 0.9em;
+        /* Adjust font size for better readability */
+        margin: 10px 0;
+        /* Adjust margins for spacing */
+    }
+
+    /* Ensure the section itself is responsive */
+    .statAnalysis2 {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+/*-----Huawei Style*/
+
 .huawei {
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: #f9f9f9;
 }
 
-.titleN {
+.titleHU {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
     text-align: center;
-    margin: 0 auto 50px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-}
-
-.titleN::after {
-    content: '';
-    background: rgb(170, 42, 121);
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.statAnalysis3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 .circle-progress-container3 {
-    width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Stat Analysis Section */
+.statAnalysis3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .circle-progress3 {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    /* Default size, adjust as needed */
+    height: 100px;
     transform: rotate(-90deg);
 }
 
@@ -1308,7 +1388,7 @@ text {
 
 .circle-progress-bar3 {
     fill: none;
-    stroke: rgb(170, 42, 121);
+    stroke: orange;
     stroke-width: 10;
     stroke-dasharray: 282.6;
     /* Circumference of the circle */
@@ -1327,59 +1407,101 @@ text {
     font-weight: bold;
 }
 
-.descriptionT3 {
-    width: 50%;
-}
-
 #descriptionT3-text {
     font-size: 16px;
     color: #333;
 }
 
-/*-------------OPPO styling------------------*/
+.circle-progress-bg3 {
+    stroke-width: 10;
+}
+
+.circle-progress-text3 {
+    font-size: 1.5em;
+}
+
+.descriptionT3 {
+    text-align: center;
+}
+
+.descriptionT3 p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsive Design for Small Screens for products circular bars */
+@media (max-width: 600px) {
+    .circle-progress-container3 {
+        margin-top: 0;
+    }
+
+    .circle-progress3 {
+        width: 80px;
+        /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    .circle-progress-text3 {
+        font-size: 1.2em;
+        /* Adjust font size */
+    }
+
+    .titleHU {
+        font-size: 1em;
+        /* Adjust font size */
+    }
+
+    .descriptionT3 p {
+        font-size: 0.9em;
+        /* Adjust font size for better readability */
+        margin: 10px 0;
+        /* Adjust margins for spacing */
+    }
+
+    /* Ensure the section itself is responsive */
+    .statAnalysis3 {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+/*-----Oppo Style*/
+
 .Oppo {
-    margin-top: 100px;
-    background-color: #fff;
+    margin-top: 50px;
+    background-color: #f9f9f9;
 }
 
 .titleO {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
     text-align: center;
-    margin: 0 auto 50px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-}
-
-.titleO::after {
-    content: '';
-    background: rgb(13, 135, 139);
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.statAnalysis4 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 .circle-progress-container4 {
-    width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Stat Analysis Section */
+.statAnalysis4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .circle-progress4 {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    /* Default size, adjust as needed */
+    height: 100px;
     transform: rotate(-90deg);
 }
 
@@ -1410,59 +1532,227 @@ text {
     font-weight: bold;
 }
 
-.descriptionT4 {
-    width: 50%;
-}
-
 #descriptionT4-text {
     font-size: 16px;
     color: #333;
 }
 
-/*----REDMI styling---*/
+.circle-progress-bg4 {
+    stroke-width: 10;
+}
+
+.circle-progress-text4 {
+    font-size: 1.5em;
+}
+
+.descriptionT4 {
+    text-align: center;
+}
+
+.descriptionT4 p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsive Design for Small Screens for products circular bars */
+@media (max-width: 600px) {
+    .circle-progress-container4 {
+        margin-top: 0;
+    }
+
+    .circle-progress4 {
+        width: 80px;
+        /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    .circle-progress-text4 {
+        font-size: 1.2em;
+        /* Adjust font size */
+    }
+
+    .titleO {
+        font-size: 1em;
+        /* Adjust font size */
+    }
+
+    .descriptionT4 p {
+        font-size: 0.9em;
+        /* Adjust font size for better readability */
+        margin: 10px 0;
+        /* Adjust margins for spacing */
+    }
+
+    /* Ensure the section itself is responsive */
+    .statAnalysis4 {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+/*-----REDMI Style*/
+
 .Redmi {
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: #f9f9f9;
 }
 
 .titleR {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
     text-align: center;
-    margin: 0 auto 50px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-}
-
-.titleR::after {
-    content: '';
-    background: rgb(47, 49, 153);
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.statAnalysis5 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 .circle-progress-container5 {
-    width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Stat Analysis Section */
+.statAnalysis5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .circle-progress5 {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    /* Default size, adjust as needed */
+    height: 100px;
+    transform: rotate(-90deg);
+}
+
+.circle-bg5 {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 10;
+}
+
+.circle-progress-bar5 {
+    fill: none;
+    stroke: rgb(13, 135, 139);
+    stroke-width: 10;
+    stroke-dasharray: 282.6;
+    /* Circumference of the circle */
+    stroke-dashoffset: 282.6;
+    /* Starts as 100% (hidden) */
+    transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+circle {
+    transition: stroke-dashoffset 0.5s;
+}
+
+text {
+    font-size: 20px;
+    fill: #333;
+    font-weight: bold;
+}
+
+#descriptionT5-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.circle-progress-bg5 {
+    stroke-width: 10;
+}
+
+.circle-progress-text5 {
+    font-size: 1.5em;
+}
+
+.descriptionT5 {
+    text-align: center;
+}
+
+.descriptionT5 p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsive Design for Small Screens for products circular bars */
+@media (max-width: 600px) {
+    .circle-progress-container5 {
+        margin-top: 0;
+    }
+
+    .circle-progress5 {
+        width: 80px;
+        /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    .circle-progress-text5 {
+        font-size: 1.2em;
+        /* Adjust font size */
+    }
+
+    .titleR {
+        font-size: 1em;
+        /* Adjust font size */
+    }
+
+    .descriptionT5 p {
+        font-size: 0.9em;
+        /* Adjust font size for better readability */
+        margin: 10px 0;
+        /* Adjust margins for spacing */
+    }
+
+    /* Ensure the section itself is responsive */
+    .statAnalysis5 {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+/*-----REDMI Style*/
+
+.Redmi {
+    margin-top: 50px;
+    background-color: #f9f9f9;
+}
+
+.titleR {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+.circle-progress-container5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Stat Analysis Section */
+.statAnalysis5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.circle-progress5 {
+    width: 100px;
+    /* Default size, adjust as needed */
+    height: 100px;
     transform: rotate(-90deg);
 }
 
@@ -1493,59 +1783,102 @@ text {
     font-weight: bold;
 }
 
-.descriptionT5 {
-    width: 50%;
-}
-
 #descriptionT5-text {
     font-size: 16px;
     color: #333;
 }
 
-/*------ONEPLUS styling---*/
+.circle-progress-bg5 {
+    stroke-width: 10;
+}
+
+.circle-progress-text5 {
+    font-size: 1.5em;
+}
+
+.descriptionT5 {
+    text-align: center;
+}
+
+.descriptionT5 p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsive Design for Small Screens for products circular bars */
+@media (max-width: 600px) {
+    .circle-progress-container5 {
+        margin-top: 0;
+    }
+
+    .circle-progress5 {
+        width: 80px;
+        /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    .circle-progress-text5 {
+        font-size: 1.2em;
+        /* Adjust font size */
+    }
+
+    .titleR {
+        font-size: 1em;
+        /* Adjust font size */
+    }
+
+    .descriptionT5 p {
+        font-size: 0.9em;
+        /* Adjust font size for better readability */
+        margin: 10px 0;
+        /* Adjust margins for spacing */
+    }
+
+    /* Ensure the section itself is responsive */
+    .statAnalysis5 {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+/*-----ONEPLUS Style*/
+
 .onePlus {
-    margin-top: 100px;
-    background-color: #fff;
+    margin-top: 50px;
+    background-color: #f9f9f9;
 }
 
 .titleOP {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
     text-align: center;
-    margin: 0 auto 50px;
-    position: relative;
-    line-height: 60px;
-    color: #555;
-}
-
-.titleOP::after {
-    content: '';
-    background: rgb(39, 15, 24);
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.statAnalysis6 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 .circle-progress-container6 {
-    width: 50%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Stat Analysis Section */
+.statAnalysis6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .circle-progress6 {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    /* Default size, adjust as needed */
+    height: 100px;
     transform: rotate(-90deg);
 }
 
@@ -1576,14 +1909,65 @@ text {
     font-weight: bold;
 }
 
-.descriptionT6 {
-    width: 50%;
-}
-
 #descriptionT6-text {
     font-size: 16px;
     color: #333;
 }
+
+.circle-progress-bg6 {
+    stroke-width: 10;
+}
+
+.circle-progress-text6 {
+    font-size: 1.5em;
+}
+
+.descriptionT6 {
+    text-align: center;
+}
+
+.descriptionT6 p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsive Design for Small Screens for products circular bars */
+@media (max-width: 600px) {
+    .circle-progress-container6 {
+        margin-top: 0;
+    }
+
+    .circle-progress6 {
+        width: 80px;
+        /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    .circle-progress-text6 {
+        font-size: 1.2em;
+        /* Adjust font size */
+    }
+
+    .titleOP {
+        font-size: 1em;
+        /* Adjust font size */
+    }
+
+    .descriptionT6 p {
+        font-size: 0.9em;
+        /* Adjust font size for better readability */
+        margin: 10px 0;
+        /* Adjust margins for spacing */
+    }
+
+    /* Ensure the section itself is responsive */
+    .statAnalysis6 {
+        padding: 10px;
+    }
+}
+
+
+
 
 /*----------------------SERVICES------------*/
 /* Basic styling for the services section */
