@@ -756,6 +756,15 @@ form a {
     color: orange;
 }
 
+.pBold1 {
+    font-size: large;
+}
+
+.pBold {
+    font-weight: bold;
+}
+
+
 /* Responsive Design for Small Screens */
 @media (max-width: 600px) {
 
