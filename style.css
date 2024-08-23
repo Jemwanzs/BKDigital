@@ -757,30 +757,20 @@ form a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Contact Form */
+
+.col-md-6 h6 {
+    color: #1765be;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
 .card {
     background: #fff;
     border-radius: 8px;
     overflow: hidden;
+    margin: auto;
+    /* Center the card horizontally */
 }
 
 .card-body {
@@ -798,10 +788,15 @@ form a {
 }
 
 .form-control {
-    width: 400px;
+    width: 300px;
+    /* Full width to fit the container */
+    max-width: 300px;
+    /* Max width for larger screens */
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #ddd;
+    margin: auto;
+    /* Center the input fields */
 }
 
 .form-control::placeholder {
@@ -815,10 +810,14 @@ form a {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    display: block;
+    margin: 20px auto 0 auto;
+    /* Center the button */
 }
 
 .btn-primary:hover {
-    background: green;
+    background: darkgreen;
+    /* Improved hover effect */
 }
 
 .border-start {
@@ -831,27 +830,62 @@ form a {
     font-size: 18px;
     color: #555;
     font-weight: bold;
-}
-
-.col-md-6 h6 {
-    font-size: 15px;
-    color: #555;
-    margin-bottom: 10px;
+    text-align: center;
+    /* Center the heading */
 }
 
 .mb-1 {
     font-size: 12px;
     color: #555;
+    text-align: center;
+    /* Center the subheading */
 }
 
 .underline {
     height: 4px;
-    /* Fixed height */
     width: 4rem;
     background-color: green;
-    margin-top: 5px;
-    margin-left: 50px;
-    margin-bottom: 10px;
+    margin: 5px auto 10px auto;
+    /* Center the underline */
+}
+
+/* Responsive Design for Small Screens */
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        max-width: 350px;
+        /* Set a max-width for the card */
+        margin: auto;
+        /* Center the card */
+        padding: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+        /* Full width for the form controls */
+    }
+
+    .border-start {
+        border: none;
+        /* Remove border on small screens */
+        padding-left: 0;
+        /* Remove left padding */
+        height: auto;
+        /* Auto height */
+    }
+
+    .main-heading {
+        font-size: 16px;
+        /* Slightly smaller font size */
+    }
+
+    .btn-primary {
+        width: 100%;
+        /* Full width button */
+        padding: 10px;
+        /* Adjust padding */
+    }
 }
 
 /*----blog styling----*/
