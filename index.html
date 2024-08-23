@@ -12,8 +12,1117 @@
     <link rel="icon" href="images/favicon.png" type="image/png"><!----fav-icon for the browser---->
 </head>
 
-<body>
-    <div class="header">
+<!-- In index.html -->
+<div id="homepage">
+    <!-- Homepage content -->
+
+    <body>
+        <div class="header">
+            <div class="container">
+
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" width="150px"></a>
+                    </div>
+                    <nav>
+                        <ul id="menuItems">
+                            <!--add clickable menu using tag <a></a> to link pages-->
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                    </nav>
+                    <!--<a href="cart.html"><img src="images/shopping-bag1.png" width="30px" height="30px" alt="Cart"></a>-->
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/G3.jpeg" class="circular-img1">
+                    </div>
+                    <div class="col-2">
+                        <h1>Explore a World!<br /> ...of Cutting-Edge Tech</h1>
+                        <p>
+                            Dive into our diverse collection of smartphones, featuring the latest models from top brands
+                            like iPhone, Samsung,
+                            Huawei, OnePlus, Oppo, Redmi, Infinix, and Tecno.<br /><br />Our
+                            extensive inventory ensures
+                            that all your smartphone desires are met, with every brand and model readily
+                            available.<br /><br />Plus, take advantage of our
+                            mobile trade-in program to upgrade your device effortlessly and affordably.
+                        </p>
+                        <a href="products.html" class="btn">Explore &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--CATEGORIES / SECTIONS-->
+
+        <div class="categories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/iphone2.jpg" class="circular-img2">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/phone1.jpeg" class="circular-img2">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/G4.jpeg" class="circular-img2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--products-->
+        <div class="iPhone">
+            <div class="container">
+                <section class="statAnalysis">
+                    <div class="circle-progress-container">
+                        <svg class="circle-progress" viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar" class="circle-progress-bar" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleW">iPhones</h2>
+                    </div>
+                    <div class="descriptionT">
+                        <p>Discover the Full Range of iPhones in Stock.</p>
+                        <p id="descriptionT-text">
+                            At BK Digital Solution, we offer the complete range of iPhones to meet your every need.</p>
+                    </div>
+                </section>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone9.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=iPhone&price=###">
+                            <h4>iPhone ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone7.jpg"
+                                alt="Rolex Daytona" class="circular-img"></a>
+                        <a href="productDetails.html?name=iPhone&price=###">
+                            <h4>iPhone ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone6.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=iPhone&price=###">
+                            <h4>iPhone ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone8.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=iPhone&price=###">
+                            <h4>iPhone ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="samsung">
+            <div class="container">
+                <section class="statAnalysis2">
+                    <div class="circle-progress-container2">
+                        <svg class="circle-progress2" viewBox="0 0 100 100">
+                            <circle class="circle-bg2" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar2" class="circle-progress-bar2" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text2" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleP">Samsung Phones</h2>
+                    </div>
+                    <div class="descriptionT2">
+                        <P>Unleash Innovation with Our Premium Samsung Phones!</P>
+                        <p id="descriptionT2-text">Transform the way you connect and interact with our premium
+                            collection of
+                            Samsung phones. Designed for those who demand
+                            excellence, our Samsung range delivers exceptional performance, cutting-edge features, and
+                            stunning design.</p>
+                    </div>
+                </section>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung1.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Samsung&price=###">
+                            <h4>Samsung ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung3.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Samsung&price=###">
+                            <h4>Samsung ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>ss
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung4.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Samsung&price=###">
+                            <h4>Samsung ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung5.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Samsung&price=###">
+                            <h4>Samsung ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="huawei">
+            <div class="container">
+                <section class="statAnalysis3">
+                    <div class="circle-progress-container3">
+                        <svg class="circle-progress3" viewBox="0 0 100 100">
+                            <circle class="circle-bg3" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar3" class="circle-progress-bar3" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text3" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleN">Huawei Phones</h2>
+                    </div>
+                    <div class="descriptionT3">
+                        <P>Elevate Your Experience with Our Huawei Phones!</P>
+                        <p id="descriptionT3-text">Discover the perfect fusion of style and technology with our
+                            exclusive
+                            collection of Huawei phones. Designed for those
+                            who appreciate sophistication and high performance, our Huawei range offers remarkable
+                            features,
+                            sleek designs, and
+                            cutting-edge innovation.</p>
+                    </div>
+                </section>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei.png"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Huawei&price=###">
+                            <h4>Huawei ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei2.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Huawei&price=###">
+                            <h4>Huawei ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei3.jpeg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Huawei&price=###">
+                            <h4>Huawei ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei1.png"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Huawei&price=###">
+                            <h4>Huawei ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Oppo">
+            <div class="container">
+                <section class="statAnalysis4">
+                    <div class="circle-progress-container4">
+                        <svg class="circle-progress4" viewBox="0 0 100 100">
+                            <circle class="circle-bg4" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar4" class="circle-progress-bar4" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text4" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleO">Oppo Phones</h2>
+                    </div>
+                    <div class="descriptionT4">
+                        <P>Unleash Innovation with Our Oppo Phones!</P>
+                        <p id="descriptionT4-text">Transform your mobile experience with our exclusive range of Oppo
+                            phones.
+                            Known for their sleek designs and advanced
+                            technology, Oppo phones offer an unmatched combination of style and performance.</p>
+                    </div>
+                </section>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo1.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Oppo&price=###">
+                            <h4>Oppo ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo2.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Oppo&price=###">
+                            <h4>Oppo ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo3.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Oppo&price=###">
+                            <h4>Oppo ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo5.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Oppo&price=###">
+                            <h4>Oppo ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Redmi">
+            <div class="container">
+                <section class="statAnalysis5">
+                    <div class="circle-progress-container5">
+                        <svg class="circle-progress5" viewBox="0 0 100 100">
+                            <circle class="circle-bg5" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar5" class="circle-progress-bar5" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text5" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleR">Redmi Phones</h2>
+                    </div>
+                    <div class="descriptionT5">
+                        <P>Elevate Your Mobile Experience with Redmi Phones!</P>
+                        <p id="descriptionT5-text">Discover the perfect blend of performance and affordability with our
+                            extensive range of Redmi phones. Designed to
+                            deliver exceptional value, Redmi phones offer powerful features and sleek designs that cater
+                            to
+                            all your needs.</p>
+                    </div>
+                </section>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi1.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Redmi&price=###">
+                            <h4>Redmi ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi2.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Redmi&price=###">
+                            <h4>Redmi ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi3.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Redmi&price=###">
+                            <h4>Redmi ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi4.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=Redmi&price=###">
+                            <h4>Redmi ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="onePlus">
+            <div class="container">
+                <section class="statAnalysis6">
+                    <div class="circle-progress-container6">
+                        <svg class="circle-progress6" viewBox="0 0 100 100">
+                            <circle class="circle-bg6" cx="50" cy="50" r="45"></circle>
+                            <circle id="circle-progress-bar6" class="circle-progress-bar6" cx="50" cy="50" r="45">
+                            </circle>
+                            <text id="circle-progress-text6" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
+                        </svg>
+                        <h2 class="titleOP">OnePlus Phones</h2>
+                    </div>
+                    <div class="descriptionT5">
+                        <P>Elevate Your Mobile Experience with Redmi Phones!</P>
+                        <p id="descriptionT5-text">Experience the pinnacle of performance and design with our exclusive
+                            collection of OnePlus phones. Renowned for their
+                            speed, innovation, and premium build quality, OnePlus devices offer an unmatched smartphone
+                            experience.</p>
+                    </div>
+                </section>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus1.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=OnePlus&price=###">
+                            <h4>OnePlus ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus2.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=OnePlus&price=###">
+                            <h4>OnePlus ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus3.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=OnePlus&price=###">
+                            <h4>OnePlus ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus4.jpg"
+                                class="circular-img"></a>
+                        <a href="productDetails.html?name=OnePlus&price=###">
+                            <h4>OnePlus ...</h4>
+                        </a>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---other products--->
+        <div class="offer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="productDetails.html?name=Mobile%Phone&price=###"><img src="images/iphone2.jpg"
+                                class="circular-img4"></a>
+                        <a href="productDetails.html?name=Mobile%Phone&price=###">
+                            <h4>Tecno | Infinix</h4>
+                        </a>
+                        <div class=" rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p>Exclusively Available!</p>
+                        <H1>Tecno | Infinix | Itel | Xtigi </H1>
+                        <small>Unlock a world of innovation and style with our exclusive collection of Tecno, Infinix,
+                            Itel,
+                            Xtigi, and many more
+                            top-tier phones.<br /><br />These brands are renowned for delivering cutting-edge
+                            technology,
+                            sleek designs, and exceptional
+                            performance at unbeatable prices. Explore
+                            our exclusive range
+                            today and experience the perfect blend of functionality and flair.</small>
+                        <a href="productDetails.html?name=Mobile%Phone" class="btn">Buy Now &#8594;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-------Testimonials------->
+        <div class="testmonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>
+                            I can't say enough about the exceptional service I received at BK Digital Solution. My phone
+                            was
+                            in serious need of
+                            repair, and they handled it with unmatched professionalism. <br />From screen replacement to
+                            battery
+                            and camera repairs, they
+                            did it all seamlessly. Their expertise and attention to detail truly set them
+                            apart!
+                        </p>
+                        <i class="fa fa-quote-left"></i>
+                        <div class=" rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="images/client4.png">
+                        <h3>James Sammy</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>
+                            BK Digital Solution team conducted a thorough motherboard check and repair for my Huawei
+                            Nova
+                            5T, ensuring my device was running
+                            like new. <br /><br />The iPhone
+                            backlid replacement was the cherry on top—now my phone looks and functions perfectly.
+                        </p>
+                        <i class="fa fa-quote-left"></i>
+                        <div class=" rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <img src="images/client1.webp">
+                        <h3>Libbie Sonia</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>
+                            I recently visited BK Digital Solution and was blown away by the variety of phones they had
+                            in
+                            stock. Whether you're
+                            looking for the latest iPhone, Samsung, or Huawei, they have it all. <br />I was
+                            particularly
+                            impressed with their selection
+                            of Oppo, OnePlus, and Redmi phones, offering something for every need and budget.
+                        </p>
+                        <i class="fa fa-quote-left"></i>
+                        <div class=" rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <img src="images/client6.jpeg">
+                        <h3>Alex M</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BRANDS -->
+        <div class="brands">
+            <div class="container">
+                <div class="scrolling-wrapper">
+                    <div class="brand-items">
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.png">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.png">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                        <!-- Duplicate items for seamless looping -->
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.jpeg">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.jpeg">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                        <!-- Duplicate items for seamless looping -->
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.jpeg">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.jpeg">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                        <!-- Duplicate items for seamless looping -->
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.jpeg">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.jpeg">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                        <!-- Duplicate items for seamless looping -->
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.jpeg">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.jpeg">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                        <!-- Duplicate items for seamless looping -->
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.jpeg">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.jpeg">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                        <!-- Duplicate items for seamless looping -->
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.jpeg">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.jpeg">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                        <!-- Duplicate items for seamless looping -->
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.jpeg">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.jpeg">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                        <!-- Duplicate items for seamless looping -->
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.jpeg">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.jpeg">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                        <!-- Duplicate items for seamless looping -->
+                        <img src="images/brand1.png">
+                        <img src="images/brand2.jpeg">
+                        <img src="images/brand3.png">
+                        <img src="images/brand4.png">
+                        <img src="images/brand5.png">
+                        <img src="images/brand6.png">
+                        <img src="images/brand7.jpeg">
+                        <img src="images/brand8.jpg">
+                        <img src="images/brand9.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <img src="images/logo3.png" alt="Footer Logo">
+                        <p>Trust us for quality, reliability, and top brands
+                            like iPhone, Samsung,
+                            Huawei, OnePlus, Oppo, Redmi, Infinix, and Tecno.<br /><br />Take advantage of our
+                            mobile trade-in program to upgrade your device effortlessly and affordably—Fredy, Director
+                            and
+                            Founder</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="">fredrickombese5@gmail.com</a></li>
+                            <li><a href="">+254721-550-206</a></li>
+                            <li><a href="https://youtube.com">YouTube</a></li>
+                            <li><a href="https://facebook.com">Facebook</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Download Our App</h3>
+                        <p>Android & iOS users</p>
+                        <div class="app-logo">
+                            <li><a href="https://play.google.com/store/apps?hl=en_US&pli=1"><img
+                                        src="images/playstore.png" alt="Play Store"></a>
+                            <li><a href="https://appstore.com"><img src="images/appstore.png" alt="App Store"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">© 2024 JMS | Fredy-BK Digital. All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <!-- iphones-->
+        <script>
+            document.addEventListener('scroll', function () {
+                const section = document.querySelector('.statAnalysis');
+                const progressBar = document.getElementById('circle-progress-bar');
+                const progressText = document.getElementById('circle-progress-text');
+                const descriptionText = document.getElementById('descriptionT-text');
+
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                const sectionHeight = section.offsetHeight;
+                const windowHeight = window.innerHeight;
+
+                // Calculate how much of the section is in view
+                let percentage = 0;
+                if (sectionTop < windowHeight && sectionBottom > 0) {
+                    if (sectionTop >= 0) {
+                        // Section is partially in view from the top
+                        percentage = ((windowHeight - sectionTop) / sectionHeight) * 75;
+                    } else if (sectionBottom <= windowHeight) {
+                        // Section is fully in view
+                        percentage = 75;
+                    } else {
+                        // Section is partially in view from the bottom
+                        percentage = ((sectionBottom) / sectionHeight) * 75;
+                    }
+                }
+                percentage = Math.max(0, Math.min(75, percentage));
+
+                const radius = 45;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (percentage / 100 * circumference);
+
+                progressBar.style.strokeDashoffset = offset;
+                progressText.textContent = `${Math.round(percentage)}%`;
+                descriptionText.textContent = `${Math.round(percentage)}% of us will; step into the future with style and sophistication by choosing from our exclusive collection of iPhones. Designed to impress, our range ensures that you make a bold statement wherever you go.`;
+            });
+        </script>
+
+        <!--samsung-->
+
+        <script>
+            document.addEventListener('scroll', function () {
+                const section = document.querySelector('.statAnalysis2');
+                const progressBar = document.getElementById('circle-progress-bar2');
+                const progressText = document.getElementById('circle-progress-text2');
+                const descriptionText = document.getElementById('descriptionT2-text');
+
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                const sectionHeight = section.offsetHeight;
+                const windowHeight = window.innerHeight;
+
+                // Calculate how much of the section is in view
+                let percentage = 0;
+                if (sectionTop < windowHeight && sectionBottom > 0) {
+                    if (sectionTop >= 0) {
+                        // Section is partially in view from the top
+                        percentage = ((windowHeight - sectionTop) / sectionHeight) * 80;
+                    } else if (sectionBottom <= windowHeight) {
+                        // Section is fully in view
+                        percentage = 80;
+                    } else {
+                        // Section is partially in view from the bottom
+                        percentage = ((sectionBottom) / sectionHeight) * 80;
+                    }
+                }
+                percentage = Math.max(0, Math.min(80, percentage));
+
+                const radius = 45;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (percentage / 100 * circumference);
+
+                progressBar.style.strokeDashoffset = offset;
+                progressText.textContent = `${Math.round(percentage)}%`;
+                descriptionText.textContent = `${Math.round(percentage)}% of us will; transform the way you connect and interact with our premium collection of Samsung phones.`;
+            });
+        </script>
+
+        <!--Huawei-->
+        <script>
+            document.addEventListener('scroll', function () {
+                const section = document.querySelector('.statAnalysis3');
+                const progressBar = document.getElementById('circle-progress-bar3');
+                const progressText = document.getElementById('circle-progress-text3');
+                const descriptionText = document.getElementById('descriptionT3-text');
+
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                const sectionHeight = section.offsetHeight;
+                const windowHeight = window.innerHeight;
+
+                // Calculate how much of the section is in view
+                let percentage = 0;
+                if (sectionTop < windowHeight && sectionBottom > 0) {
+                    if (sectionTop >= 0) {
+                        // Section is partially in view from the top
+                        percentage = ((windowHeight - sectionTop) / sectionHeight) * 50;
+                    } else if (sectionBottom <= windowHeight) {
+                        // Section is fully in view
+                        percentage = 50;
+                    } else {
+                        // Section is partially in view from the bottom
+                        percentage = ((sectionBottom) / sectionHeight) * 50;
+                    }
+                }
+                percentage = Math.max(0, Math.min(50, percentage));
+
+                const radius = 45;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (percentage / 100 * circumference);
+
+                progressBar.style.strokeDashoffset = offset;
+                progressText.textContent = `${Math.round(percentage)}%`;
+                descriptionText.textContent = `${Math.round(percentage)}% of us will; discover the perfect fusion of style and technology with our exclusive collection of Huawei phones. Designed for those who appreciate sophistication and high performance, our Huawei range offers remarkable features, sleek designs, and cutting-edge innovation.`;
+            });
+        </script>
+
+        <!--Oppo-->
+        <script>
+            document.addEventListener('scroll', function () {
+                const section = document.querySelector('.statAnalysis4');
+                const progressBar = document.getElementById('circle-progress-bar4');
+                const progressText = document.getElementById('circle-progress-text4');
+                const descriptionText = document.getElementById('descriptionT4-text');
+
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                const sectionHeight = section.offsetHeight;
+                const windowHeight = window.innerHeight;
+
+                // Calculate how much of the section is in view
+                let percentage = 0;
+                if (sectionTop < windowHeight && sectionBottom > 0) {
+                    if (sectionTop >= 0) {
+                        // Section is partially in view from the top
+                        percentage = ((windowHeight - sectionTop) / sectionHeight) * 70;
+                    } else if (sectionBottom <= windowHeight) {
+                        // Section is fully in view
+                        percentage = 70;
+                    } else {
+                        // Section is partially in view from the bottom
+                        percentage = ((sectionBottom) / sectionHeight) * 70;
+                    }
+                }
+                percentage = Math.max(0, Math.min(70, percentage));
+
+                const radius = 45;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (percentage / 100 * circumference);
+
+                progressBar.style.strokeDashoffset = offset;
+                progressText.textContent = `${Math.round(percentage)}%`;
+                descriptionText.textContent = `${Math.round(percentage)}% of us will; transform their mobile experience with our exclusive range of Oppo phones. Known for their sleek designs and advanced technology, Oppo phones offer an unmatched combination of style and performance.`;
+            });
+        </script>
+
+        <!--Redmi-->
+        <script>
+            document.addEventListener('scroll', function () {
+                const section = document.querySelector('.statAnalysis5');
+                const progressBar = document.getElementById('circle-progress-bar5');
+                const progressText = document.getElementById('circle-progress-text5');
+                const descriptionText = document.getElementById('descriptionT5-text');
+
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                const sectionHeight = section.offsetHeight;
+                const windowHeight = window.innerHeight;
+
+                // Calculate how much of the section is in view
+                let percentage = 0;
+                if (sectionTop < windowHeight && sectionBottom > 0) {
+                    if (sectionTop >= 0) {
+                        // Section is partially in view from the top
+                        percentage = ((windowHeight - sectionTop) / sectionHeight) * 40;
+                    } else if (sectionBottom <= windowHeight) {
+                        // Section is fully in view
+                        percentage = 40;
+                    } else {
+                        // Section is partially in view from the bottom
+                        percentage = ((sectionBottom) / sectionHeight) * 40;
+                    }
+                }
+                percentage = Math.max(0, Math.min(40, percentage));
+
+                const radius = 45;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (percentage / 100 * circumference);
+
+                progressBar.style.strokeDashoffset = offset;
+                progressText.textContent = `${Math.round(percentage)}%`;
+                descriptionText.textContent = `${Math.round(percentage)}% of us will; discover the perfect blend of performance and affordability with our extensive range of Redmi phones. Designed to deliver exceptional value, Redmi phones offer powerful features and sleek designs that cater to all user needs.`;
+            });
+        </script>
+
+        <!--Redmi-->
+        <script>
+            document.addEventListener('scroll', function () {
+                const section = document.querySelector('.statAnalysis6');
+                const progressBar = document.getElementById('circle-progress-bar6');
+                const progressText = document.getElementById('circle-progress-text6');
+                const descriptionText = document.getElementById('descriptionT6-text');
+
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionBottom = section.getBoundingClientRect().bottom;
+                const sectionHeight = section.offsetHeight;
+                const windowHeight = window.innerHeight;
+
+                // Calculate how much of the section is in view
+                let percentage = 0;
+                if (sectionTop < windowHeight && sectionBottom > 0) {
+                    if (sectionTop >= 0) {
+                        // Section is partially in view from the top
+                        percentage = ((windowHeight - sectionTop) / sectionHeight) * 25;
+                    } else if (sectionBottom <= windowHeight) {
+                        // Section is fully in view
+                        percentage = 25;
+                    } else {
+                        // Section is partially in view from the bottom
+                        percentage = ((sectionBottom) / sectionHeight) * 25;
+                    }
+                }
+                percentage = Math.max(0, Math.min(25, percentage));
+
+                const radius = 45;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (percentage / 100 * circumference);
+
+                progressBar.style.strokeDashoffset = offset;
+                progressText.textContent = `${Math.round(percentage)}%`;
+                descriptionText.textContent = `${Math.round(percentage)}% of us will; want to experience the pinnacle of performance and design with our exclusive collection of OnePlus phones. Renowned for their speed, innovation, and premium build quality, OnePlus devices offer an unmatched smartphone experience.`;
+            });
+        </script>
+
+        <!--------menu toggle-->
+        <script>
+            var menuItems = document.getElementById("menuItems");
+            menuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (menuItems.style.maxHeight == "0px") {
+                    menuItems.style.maxHeight = "1000px";
+                }
+                else {
+                    menuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+        <!--code copy protection <right click and other chortcuts dissabled-->
+        <script>
+            document.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.ctrlKey && (e.key === 'u' || e.key === 'i' || e.key === 'c')) {
+                    e.preventDefault();
+                }
+            });
+        </script>
+        <script>
+            function redirectBasedOnScreenWidth() {
+                if (window.innerWidth <= 600) {
+                    window.location.href = 'services.html';
+                }
+            }
+
+            // Check screen width on page load
+            window.onload = redirectBasedOnScreenWidth;
+
+            // Optionally, check again if the user resizes the window
+            window.onresize = redirectBasedOnScreenWidth;
+        </script>
+
+    </body>
+</div>
+
+<div id="servicespage" style="display:none;">
+    <!-- Services page content -->
+    body>
+    <div class="headerS">
         <div class="container">
 
             <div class="navbar">
@@ -36,737 +1145,79 @@
             </div>
             <div class="row">
                 <div class="col-2">
-                    <img src="images/G3.jpeg" class="circular-img1">
+                    <img src="images/service1.jpg" class="circular-img1">
                 </div>
                 <div class="col-2">
-                    <h1>Explore a World!<br /> ...of Cutting-Edge Tech</h1>
+                    <h1>Expert Repair Services !</h1>
                     <p>
-                        Dive into our diverse collection of smartphones, featuring the latest models from top brands
-                        like iPhone, Samsung,
-                        Huawei, OnePlus, Oppo, Redmi, Infinix, and Tecno.<br /><br />Our
-                        extensive inventory ensures
-                        that all your smartphone desires are met, with every brand and model readily
-                        available.<br /><br />Plus, take advantage of our
-                        mobile trade-in program to upgrade your device effortlessly and affordably.
+                        At BK Digital Solution, we understand the importance of staying connected, which is why we offer
+                        top-tier phone repair
+                        services to keep your devices running smoothly. <br /><br />Trust us to restore your
+                        phone's functionality quickly and professionally, ensuring you never miss a beat.
                     </p>
-                    <a href="products.html" class="btn">Explore &#8594;</a>
+                    <a href="contact.html" class="btn">Reach Out &#8594;</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--CATEGORIES / SECTIONS-->
-
-    <div class="categories">
+    <!-- Services Section -->
+    <div class="services-section">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/iphone2.jpg" class="circular-img2">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="images/repair1.jpg" alt="Phone Repairs">
+                    <h3>Phone Repairs</h3>
+                    <p>We offer comprehensive phone repair services, covering all types of issues to restore your device
+                        to
+                        full functionality. Whether it's a software glitch or a hardware malfunction, our expert
+                        technicians
+                        can handle it with precision.</p>
                 </div>
-                <div class="col-3">
-                    <img src="images/phone1.jpeg" class="circular-img2">
+                <div class="service-item">
+                    <img src="images/repair4.jpg" alt="Screen Replacement">
+                    <h3>Screen Replacement</h3>
+                    <p>Cracked or damaged screen? No problem! We provide quick and affordable screen replacement
+                        services
+                        using high-quality, original parts to ensure your phone looks and functions like new.</p>
                 </div>
-                <div class="col-3">
-                    <img src="images/G4.jpeg" class="circular-img2">
+                <div class="service-item">
+                    <img src="images/repair3.jpg" alt="Camera Repairs and Replacements">
+                    <h3>Camera Repairs and Replacements</h3>
+                    <p>If your phone's camera isn't functioning properly, bring it to us. We specialize in diagnosing
+                        and
+                        fixing camera issues, including lens replacements and sensor repairs, so you can capture life's
+                        moments again.</p>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!--products-->
-    <div class="iPhone">
-        <div class="container">
-            <section class="statAnalysis">
-                <div class="circle-progress-container">
-                    <svg class="circle-progress" viewBox="0 0 100 100">
-                        <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar" class="circle-progress-bar" cx="50" cy="50" r="45"></circle>
-                        <text id="circle-progress-text" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleW">iPhones</h2>
+                <div class="service-item">
+                    <img src="images/repair2.jpg" alt="Battery Replacement">
+                    <h3>Battery Replacement</h3>
+                    <p>Is your phone's battery not holding a charge? Our battery replacement service is here to help. We
+                        use
+                        high-quality batteries to ensure your phone’s longevity and performance.</p>
                 </div>
-                <div class="descriptionT">
-                    <p>Discover the Full Range of iPhones in Stock.</p>
-                    <p id="descriptionT-text">
-                        At BK Digital Solution, we offer the complete range of iPhones to meet your every need.</p>
+                <div class="service-item">
+                    <img src="images/repair6.jpg" alt="Motherboard Checks and Repair">
+                    <h3>Motherboard Checks and Repair</h3>
+                    <p>For more complex issues, our experts provide motherboard diagnostic and repair services. We
+                        carefully
+                        inspect and repair or replace faulty components, ensuring your phone runs smoothly.</p>
                 </div>
-            </section>
-
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone9.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=iPhone&price=###">
-                        <h4>iPhone ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone7.jpg"
-                            alt="Rolex Daytona" class="circular-img"></a>
-                    <a href="productDetails.html?name=iPhone&price=###">
-                        <h4>iPhone ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone6.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=iPhone&price=###">
-                        <h4>iPhone ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=iPhone&price=###"><img src="images/iphone8.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=iPhone&price=###">
-                        <h4>iPhone ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="samsung">
-        <div class="container">
-            <section class="statAnalysis2">
-                <div class="circle-progress-container2">
-                    <svg class="circle-progress2" viewBox="0 0 100 100">
-                        <circle class="circle-bg2" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar2" class="circle-progress-bar2" cx="50" cy="50" r="45"></circle>
-                        <text id="circle-progress-text2" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleP">Samsung Phones</h2>
-                </div>
-                <div class="descriptionT2">
-                    <P>Unleash Innovation with Our Premium Samsung Phones!</P>
-                    <p id="descriptionT2-text">Transform the way you connect and interact with our premium collection of
-                        Samsung phones. Designed for those who demand
-                        excellence, our Samsung range delivers exceptional performance, cutting-edge features, and
-                        stunning design.</p>
-                </div>
-            </section>
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung1.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Samsung&price=###">
-                        <h4>Samsung ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung3.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Samsung&price=###">
-                        <h4>Samsung ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>ss
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung4.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Samsung&price=###">
-                        <h4>Samsung ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Samsung&price=###"><img src="images/samsung5.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Samsung&price=###">
-                        <h4>Samsung ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="huawei">
-        <div class="container">
-            <section class="statAnalysis3">
-                <div class="circle-progress-container3">
-                    <svg class="circle-progress3" viewBox="0 0 100 100">
-                        <circle class="circle-bg3" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar3" class="circle-progress-bar3" cx="50" cy="50" r="45"></circle>
-                        <text id="circle-progress-text3" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleN">Huawei Phones</h2>
-                </div>
-                <div class="descriptionT3">
-                    <P>Elevate Your Experience with Our Huawei Phones!</P>
-                    <p id="descriptionT3-text">Discover the perfect fusion of style and technology with our exclusive
-                        collection of Huawei phones. Designed for those
-                        who appreciate sophistication and high performance, our Huawei range offers remarkable features,
-                        sleek designs, and
-                        cutting-edge innovation.</p>
-                </div>
-            </section>
-
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei.png"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Huawei&price=###">
-                        <h4>Huawei ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei2.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Huawei&price=###">
-                        <h4>Huawei ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei3.jpeg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Huawei&price=###">
-                        <h4>Huawei ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Huawei&price=###"><img src="images/huawei1.png"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Huawei&price=###">
-                        <h4>Huawei ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="Oppo">
-        <div class="container">
-            <section class="statAnalysis4">
-                <div class="circle-progress-container4">
-                    <svg class="circle-progress4" viewBox="0 0 100 100">
-                        <circle class="circle-bg4" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar4" class="circle-progress-bar4" cx="50" cy="50" r="45"></circle>
-                        <text id="circle-progress-text4" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleO">Oppo Phones</h2>
-                </div>
-                <div class="descriptionT4">
-                    <P>Unleash Innovation with Our Oppo Phones!</P>
-                    <p id="descriptionT4-text">Transform your mobile experience with our exclusive range of Oppo phones.
-                        Known for their sleek designs and advanced
-                        technology, Oppo phones offer an unmatched combination of style and performance.</p>
-                </div>
-            </section>
-
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo1.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Oppo&price=###">
-                        <h4>Oppo ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo2.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Oppo&price=###">
-                        <h4>Oppo ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo3.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Oppo&price=###">
-                        <h4>Oppo ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Oppo&price=###"><img src="images/oppo5.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Oppo&price=###">
-                        <h4>Oppo ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="Redmi">
-        <div class="container">
-            <section class="statAnalysis5">
-                <div class="circle-progress-container5">
-                    <svg class="circle-progress5" viewBox="0 0 100 100">
-                        <circle class="circle-bg5" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar5" class="circle-progress-bar5" cx="50" cy="50" r="45"></circle>
-                        <text id="circle-progress-text5" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleR">Redmi Phones</h2>
-                </div>
-                <div class="descriptionT5">
-                    <P>Elevate Your Mobile Experience with Redmi Phones!</P>
-                    <p id="descriptionT5-text">Discover the perfect blend of performance and affordability with our
-                        extensive range of Redmi phones. Designed to
-                        deliver exceptional value, Redmi phones offer powerful features and sleek designs that cater to
-                        all your needs.</p>
-                </div>
-            </section>
-
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi1.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Redmi&price=###">
-                        <h4>Redmi ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi2.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Redmi&price=###">
-                        <h4>Redmi ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi3.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Redmi&price=###">
-                        <h4>Redmi ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=Redmi&price=###"><img src="images/redmi4.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=Redmi&price=###">
-                        <h4>Redmi ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="onePlus">
-        <div class="container">
-            <section class="statAnalysis6">
-                <div class="circle-progress-container6">
-                    <svg class="circle-progress6" viewBox="0 0 100 100">
-                        <circle class="circle-bg6" cx="50" cy="50" r="45"></circle>
-                        <circle id="circle-progress-bar6" class="circle-progress-bar6" cx="50" cy="50" r="45"></circle>
-                        <text id="circle-progress-text6" x="50" y="50" text-anchor="middle" dy=".3em">0%</text>
-                    </svg>
-                    <h2 class="titleOP">OnePlus Phones</h2>
-                </div>
-                <div class="descriptionT5">
-                    <P>Elevate Your Mobile Experience with Redmi Phones!</P>
-                    <p id="descriptionT5-text">Experience the pinnacle of performance and design with our exclusive
-                        collection of OnePlus phones. Renowned for their
-                        speed, innovation, and premium build quality, OnePlus devices offer an unmatched smartphone
-                        experience.</p>
-                </div>
-            </section>
-
-            <div class="row">
-                <div class="col-4">
-                    <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus1.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=OnePlus&price=###">
-                        <h4>OnePlus ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus2.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=OnePlus&price=###">
-                        <h4>OnePlus ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus3.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=OnePlus&price=###">
-                        <h4>OnePlus ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <a href="productDetails.html?name=OnePlus&price=###"><img src="images/onePlus4.jpg"
-                            class="circular-img"></a>
-                    <a href="productDetails.html?name=OnePlus&price=###">
-                        <h4>OnePlus ...</h4>
-                    </a>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!---other products--->
-    <div class="offer">
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <a href="productDetails.html?name=Mobile%Phone&price=###"><img src="images/iphone2.jpg"
-                            class="circular-img4"></a>
-                    <a href="productDetails.html?name=Mobile%Phone&price=###">
-                        <h4>Tecno | Infinix</h4>
-                    </a>
-                    <div class=" rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <p>Exclusively Available!</p>
-                    <H1>Tecno | Infinix | Itel | Xtigi </H1>
-                    <small>Unlock a world of innovation and style with our exclusive collection of Tecno, Infinix, Itel,
-                        Xtigi, and many more
-                        top-tier phones.<br /><br />These brands are renowned for delivering cutting-edge technology,
-                        sleek designs, and exceptional
-                        performance at unbeatable prices. Explore
-                        our exclusive range
-                        today and experience the perfect blend of functionality and flair.</small>
-                    <a href="productDetails.html?name=Mobile%Phone" class="btn">Buy Now &#8594;</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-------Testimonials------->
-    <div class="testmonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>
-                        I can't say enough about the exceptional service I received at BK Digital Solution. My phone was
-                        in serious need of
-                        repair, and they handled it with unmatched professionalism. <br />From screen replacement to
-                        battery
-                        and camera repairs, they
-                        did it all seamlessly. Their expertise and attention to detail truly set them
-                        apart!
+                <div class="service-item">
+                    <img src="images/repair7.jpg" alt="iPhone Backlid Replacement">
+                    <h3>iPhone Backlid Replacement</h3>
+                    <p>Whether it’s scratched or shattered, our iPhone back lid replacement service will have your phone
+                        looking as good as new. We use original materials to match the quality and finish of your
+                        device.
                     </p>
-                    <i class="fa fa-quote-left"></i>
-                    <div class=" rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <img src="images/client4.png">
-                    <h3>James Sammy</h3>
                 </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>
-                        BK Digital Solution team conducted a thorough motherboard check and repair for my Huawei Nova
-                        5T, ensuring my device was running
-                        like new. <br /><br />The iPhone
-                        backlid replacement was the cherry on top—now my phone looks and functions perfectly.
-                    </p>
-                    <i class="fa fa-quote-left"></i>
-                    <div class=" rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <img src="images/client1.webp">
-                    <h3>Libbie Sonia</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>
-                        I recently visited BK Digital Solution and was blown away by the variety of phones they had in
-                        stock. Whether you're
-                        looking for the latest iPhone, Samsung, or Huawei, they have it all. <br />I was particularly
-                        impressed with their selection
-                        of Oppo, OnePlus, and Redmi phones, offering something for every need and budget.
-                    </p>
-                    <i class="fa fa-quote-left"></i>
-                    <div class=" rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <img src="images/client6.jpeg">
-                    <h3>Alex M</h3>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- BRANDS -->
-    <div class="brands">
-        <div class="container">
-            <div class="scrolling-wrapper">
-                <div class="brand-items">
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.png">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.png">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
-                    <!-- Duplicate items for seamless looping -->
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.jpeg">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.jpeg">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
-                    <!-- Duplicate items for seamless looping -->
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.jpeg">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.jpeg">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
-                    <!-- Duplicate items for seamless looping -->
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.jpeg">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.jpeg">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
-                    <!-- Duplicate items for seamless looping -->
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.jpeg">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.jpeg">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
-                    <!-- Duplicate items for seamless looping -->
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.jpeg">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.jpeg">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
-                    <!-- Duplicate items for seamless looping -->
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.jpeg">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.jpeg">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
-                    <!-- Duplicate items for seamless looping -->
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.jpeg">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.jpeg">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
-                    <!-- Duplicate items for seamless looping -->
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.jpeg">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.jpeg">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
-                    <!-- Duplicate items for seamless looping -->
-                    <img src="images/brand1.png">
-                    <img src="images/brand2.jpeg">
-                    <img src="images/brand3.png">
-                    <img src="images/brand4.png">
-                    <img src="images/brand5.png">
-                    <img src="images/brand6.png">
-                    <img src="images/brand7.jpeg">
-                    <img src="images/brand8.jpg">
-                    <img src="images/brand9.png">
+                <div class="service-item">
+                    <img src="images/repair8.jpg" alt="And More...">
+                    <h3>And More...</h3>
+                    <p>Beyond these services, we offer a range of additional repair solutions tailored to meet your
+                        needs.
+                        Whatever issue you face, BK Digital Solution is here to help.</p>
                 </div>
             </div>
         </div>
@@ -778,11 +1229,8 @@
             <div class="row">
                 <div class="footer-col-1">
                     <img src="images/logo3.png" alt="Footer Logo">
-                    <p>Trust us for quality, reliability, and top brands
-                        like iPhone, Samsung,
-                        Huawei, OnePlus, Oppo, Redmi, Infinix, and Tecno.<br /><br />Take advantage of our
-                        mobile trade-in program to upgrade your device effortlessly and affordably—Fredy, Director and
-                        Founder</p>
+                    <p>BK Digital Solution offers top-tier phone repair services and a wide selection of mobile phones.
+                        Trust us for quality, reliability, and outstanding customer service.</p>
                 </div>
                 <div class="footer-col-2">
                     <h3>Useful Links</h3>
@@ -806,11 +1254,11 @@
                 </div>
                 <div class="footer-col-4">
                     <h3>Download Our App</h3>
-                    <p>Android & iOS users</p>
+                    <p>Available for Android & iOS</p>
                     <div class="app-logo">
-                        <li><a href="https://play.google.com/store/apps?hl=en_US&pli=1"><img src="images/playstore.png"
-                                    alt="Play Store"></a>
-                        <li><a href="https://appstore.com"><img src="images/appstore.png" alt="App Store"></a>
+                        <a href="https://play.google.com/store/apps?hl=en_US&pli=1"><img src="images/playstore.png"
+                                alt="Play Store"></a>
+                        <a href="https://appstore.com"><img src="images/appstore.png" alt="App Store"></a>
                     </div>
                 </div>
             </div>
@@ -818,241 +1266,6 @@
             <p class="copyright">© 2024 JMS | Fredy-BK Digital. All Rights Reserved.</p>
         </div>
     </div>
-
-    <!-- iphones-->
-    <script>
-        document.addEventListener('scroll', function () {
-            const section = document.querySelector('.statAnalysis');
-            const progressBar = document.getElementById('circle-progress-bar');
-            const progressText = document.getElementById('circle-progress-text');
-            const descriptionText = document.getElementById('descriptionT-text');
-
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const sectionHeight = section.offsetHeight;
-            const windowHeight = window.innerHeight;
-
-            // Calculate how much of the section is in view
-            let percentage = 0;
-            if (sectionTop < windowHeight && sectionBottom > 0) {
-                if (sectionTop >= 0) {
-                    // Section is partially in view from the top
-                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 75;
-                } else if (sectionBottom <= windowHeight) {
-                    // Section is fully in view
-                    percentage = 75;
-                } else {
-                    // Section is partially in view from the bottom
-                    percentage = ((sectionBottom) / sectionHeight) * 75;
-                }
-            }
-            percentage = Math.max(0, Math.min(75, percentage));
-
-            const radius = 45;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (percentage / 100 * circumference);
-
-            progressBar.style.strokeDashoffset = offset;
-            progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; step into the future with style and sophistication by choosing from our exclusive collection of iPhones. Designed to impress, our range ensures that you make a bold statement wherever you go.`;
-        });
-    </script>
-
-    <!--samsung-->
-
-    <script>
-        document.addEventListener('scroll', function () {
-            const section = document.querySelector('.statAnalysis2');
-            const progressBar = document.getElementById('circle-progress-bar2');
-            const progressText = document.getElementById('circle-progress-text2');
-            const descriptionText = document.getElementById('descriptionT2-text');
-
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const sectionHeight = section.offsetHeight;
-            const windowHeight = window.innerHeight;
-
-            // Calculate how much of the section is in view
-            let percentage = 0;
-            if (sectionTop < windowHeight && sectionBottom > 0) {
-                if (sectionTop >= 0) {
-                    // Section is partially in view from the top
-                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 80;
-                } else if (sectionBottom <= windowHeight) {
-                    // Section is fully in view
-                    percentage = 80;
-                } else {
-                    // Section is partially in view from the bottom
-                    percentage = ((sectionBottom) / sectionHeight) * 80;
-                }
-            }
-            percentage = Math.max(0, Math.min(80, percentage));
-
-            const radius = 45;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (percentage / 100 * circumference);
-
-            progressBar.style.strokeDashoffset = offset;
-            progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; transform the way you connect and interact with our premium collection of Samsung phones.`;
-        });
-    </script>
-
-    <!--Huawei-->
-    <script>
-        document.addEventListener('scroll', function () {
-            const section = document.querySelector('.statAnalysis3');
-            const progressBar = document.getElementById('circle-progress-bar3');
-            const progressText = document.getElementById('circle-progress-text3');
-            const descriptionText = document.getElementById('descriptionT3-text');
-
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const sectionHeight = section.offsetHeight;
-            const windowHeight = window.innerHeight;
-
-            // Calculate how much of the section is in view
-            let percentage = 0;
-            if (sectionTop < windowHeight && sectionBottom > 0) {
-                if (sectionTop >= 0) {
-                    // Section is partially in view from the top
-                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 50;
-                } else if (sectionBottom <= windowHeight) {
-                    // Section is fully in view
-                    percentage = 50;
-                } else {
-                    // Section is partially in view from the bottom
-                    percentage = ((sectionBottom) / sectionHeight) * 50;
-                }
-            }
-            percentage = Math.max(0, Math.min(50, percentage));
-
-            const radius = 45;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (percentage / 100 * circumference);
-
-            progressBar.style.strokeDashoffset = offset;
-            progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; discover the perfect fusion of style and technology with our exclusive collection of Huawei phones. Designed for those who appreciate sophistication and high performance, our Huawei range offers remarkable features, sleek designs, and cutting-edge innovation.`;
-        });
-    </script>
-
-    <!--Oppo-->
-    <script>
-        document.addEventListener('scroll', function () {
-            const section = document.querySelector('.statAnalysis4');
-            const progressBar = document.getElementById('circle-progress-bar4');
-            const progressText = document.getElementById('circle-progress-text4');
-            const descriptionText = document.getElementById('descriptionT4-text');
-
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const sectionHeight = section.offsetHeight;
-            const windowHeight = window.innerHeight;
-
-            // Calculate how much of the section is in view
-            let percentage = 0;
-            if (sectionTop < windowHeight && sectionBottom > 0) {
-                if (sectionTop >= 0) {
-                    // Section is partially in view from the top
-                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 70;
-                } else if (sectionBottom <= windowHeight) {
-                    // Section is fully in view
-                    percentage = 70;
-                } else {
-                    // Section is partially in view from the bottom
-                    percentage = ((sectionBottom) / sectionHeight) * 70;
-                }
-            }
-            percentage = Math.max(0, Math.min(70, percentage));
-
-            const radius = 45;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (percentage / 100 * circumference);
-
-            progressBar.style.strokeDashoffset = offset;
-            progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; transform their mobile experience with our exclusive range of Oppo phones. Known for their sleek designs and advanced technology, Oppo phones offer an unmatched combination of style and performance.`;
-        });
-    </script>
-
-    <!--Redmi-->
-    <script>
-        document.addEventListener('scroll', function () {
-            const section = document.querySelector('.statAnalysis5');
-            const progressBar = document.getElementById('circle-progress-bar5');
-            const progressText = document.getElementById('circle-progress-text5');
-            const descriptionText = document.getElementById('descriptionT5-text');
-
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const sectionHeight = section.offsetHeight;
-            const windowHeight = window.innerHeight;
-
-            // Calculate how much of the section is in view
-            let percentage = 0;
-            if (sectionTop < windowHeight && sectionBottom > 0) {
-                if (sectionTop >= 0) {
-                    // Section is partially in view from the top
-                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 40;
-                } else if (sectionBottom <= windowHeight) {
-                    // Section is fully in view
-                    percentage = 40;
-                } else {
-                    // Section is partially in view from the bottom
-                    percentage = ((sectionBottom) / sectionHeight) * 40;
-                }
-            }
-            percentage = Math.max(0, Math.min(40, percentage));
-
-            const radius = 45;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (percentage / 100 * circumference);
-
-            progressBar.style.strokeDashoffset = offset;
-            progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; discover the perfect blend of performance and affordability with our extensive range of Redmi phones. Designed to deliver exceptional value, Redmi phones offer powerful features and sleek designs that cater to all user needs.`;
-        });
-    </script>
-
-    <!--Redmi-->
-    <script>
-        document.addEventListener('scroll', function () {
-            const section = document.querySelector('.statAnalysis6');
-            const progressBar = document.getElementById('circle-progress-bar6');
-            const progressText = document.getElementById('circle-progress-text6');
-            const descriptionText = document.getElementById('descriptionT6-text');
-
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionBottom = section.getBoundingClientRect().bottom;
-            const sectionHeight = section.offsetHeight;
-            const windowHeight = window.innerHeight;
-
-            // Calculate how much of the section is in view
-            let percentage = 0;
-            if (sectionTop < windowHeight && sectionBottom > 0) {
-                if (sectionTop >= 0) {
-                    // Section is partially in view from the top
-                    percentage = ((windowHeight - sectionTop) / sectionHeight) * 25;
-                } else if (sectionBottom <= windowHeight) {
-                    // Section is fully in view
-                    percentage = 25;
-                } else {
-                    // Section is partially in view from the bottom
-                    percentage = ((sectionBottom) / sectionHeight) * 25;
-                }
-            }
-            percentage = Math.max(0, Math.min(25, percentage));
-
-            const radius = 45;
-            const circumference = 2 * Math.PI * radius;
-            const offset = circumference - (percentage / 100 * circumference);
-
-            progressBar.style.strokeDashoffset = offset;
-            progressText.textContent = `${Math.round(percentage)}%`;
-            descriptionText.textContent = `${Math.round(percentage)}% of us will; want to experience the pinnacle of performance and design with our exclusive collection of OnePlus phones. Renowned for their speed, innovation, and premium build quality, OnePlus devices offer an unmatched smartphone experience.`;
-        });
-    </script>
 
     <!--------menu toggle-->
     <script>
@@ -1068,19 +1281,7 @@
         }
     </script>
 
-    <!--code copy protection <right click and other chortcuts dissabled-->
-    <script>
-        document.addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.ctrlKey && (e.key === 'u' || e.key === 'i' || e.key === 'c')) {
-                e.preventDefault();
-            }
-        });
-    </script>
-
-</body>
+    </body>
+</div>
 
 </html>
