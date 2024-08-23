@@ -1616,6 +1616,7 @@ text {
     font-size: 15px;
     cursor: pointer;
     margin-right: 10px;
+    margin-left: 40px;
 }
 
 .search-dropdown {
