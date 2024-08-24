@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Store</title>
-    <!-- Preload important script -->
-    <link rel="preload" href="important-script.js" as="script">
-    <link rel="prefetch" href="next-page.html">
-
     <link rel="stylesheet" href="style.css"> <!-- connect to the styling css-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -1083,8 +1079,13 @@
     <script>
         function redirectToServices() {
             if (window.innerWidth <= 600 && !sessionStorage.getItem('redirectedToServices')) {
-                // Immediate redirect without fade-out effect
-                window.location.href = 'services.html';
+                // Add fade-out effect
+                document.body.classList.add('fade-out');
+
+                // Redirect after the fade-out effect
+                setTimeout(function () {
+                    window.location.href = 'services.html';
+                }, 200); // Reduced duration for faster redirect
 
                 // Store a flag in sessionStorage to prevent repeated redirects
                 sessionStorage.setItem('redirectedToServices', 'true');
@@ -1096,6 +1097,7 @@
 
         // Optionally, check again if the user resizes the window
         window.onresize = redirectToServices;
+
 
     </script>
 
