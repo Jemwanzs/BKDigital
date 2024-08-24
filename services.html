@@ -167,7 +167,7 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">© 2024 JMS | Fredy-BK Digital. All Rights Reserved.</p>
+            <p class="copyright">© 2024 JMS | Fredrick Ombese-BK Digital. All Rights Reserved.</p>
         </div>
     </div>
 
@@ -226,6 +226,19 @@
                 menuItems.style.maxHeight = "0px";
             }
         }
+    </script>
+
+    <!--code copy protection <right click and other chortcuts dissabled-->
+    <script>
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'i' || e.key === 'c')) {
+                e.preventDefault();
+            }
+        });
     </script>
 
 </body>
