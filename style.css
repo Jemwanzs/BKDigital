@@ -1224,7 +1224,127 @@ text {
     }
 }
 
+/*iPhoneBacklit Style*/
 
+.iPhoneBacklit {
+    margin-top: 50px;
+    background-color: #f9f9f9;
+}
+
+.titleIPB {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: green;
+    text-align: center;
+
+}
+
+.circle-progress-container8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Stat Analysis Section */
+.statAnalysis8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.circle-progress8 {
+    width: 100px;
+    /* Default size, adjust as needed */
+    height: 100px;
+    transform: rotate(-90deg);
+}
+
+.circle-bg8 {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 10;
+}
+
+.circle-progress-bar8 {
+    fill: none;
+    stroke: green;
+    stroke-width: 10;
+    stroke-dasharray: 282.6;
+    /* Circumference of the circle */
+    stroke-dashoffset: 282.6;
+    /* Starts as 100% (hidden) */
+    transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+circle {
+    transition: stroke-dashoffset 0.5s;
+}
+
+text {
+    font-size: 20px;
+    fill: #333;
+    font-weight: bold;
+}
+
+#descriptionT8-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.circle-progress-bg8 {
+    stroke-width: 10;
+}
+
+.circle-progress-text8 {
+    font-size: 1.5em;
+}
+
+.descriptionT8 {
+    text-align: center;
+}
+
+.descriptionT8 p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsive Design for Small Screens for products circular bars */
+@media (max-width: 600px) {
+    .circle-progress-container8 {
+        margin-top: 0;
+    }
+
+    .circle-progress8 {
+        width: 80px;
+        /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    .circle-progress-text8 {
+        font-size: 1.2em;
+        /* Adjust font size */
+    }
+
+    .titleIPB {
+        font-size: 1em;
+        /* Adjust font size */
+    }
+
+    .descriptionT8 p {
+        font-size: 0.9em;
+        /* Adjust font size for better readability */
+        margin: 10px 0;
+        /* Adjust margins for spacing */
+    }
+
+    /* Ensure the section itself is responsive */
+    .statAnalysis8 {
+        padding: 10px;
+    }
+}
 
 
 /*-----samsung Style*/
@@ -1839,6 +1959,133 @@ text {
         padding: 10px;
     }
 }
+
+
+/*-----LAPTOPS Style*/
+
+.laptop {
+    margin-top: 50px;
+    background-color: #f9f9f9;
+}
+
+.titleLP {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: rgb(201, 73, 13);
+    text-align: center;
+}
+
+.circle-progress-container7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Stat Analysis Section */
+.statAnalysis7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.circle-progress7 {
+    width: 100px;
+    /* Default size, adjust as needed */
+    height: 100px;
+    transform: rotate(-90deg);
+}
+
+.circle-bg7 {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 10;
+}
+
+.circle-progress-bar7 {
+    fill: none;
+    stroke: rgb(201, 73, 13);
+    stroke-width: 10;
+    stroke-dasharray: 282.6;
+    /* Circumference of the circle */
+    stroke-dashoffset: 282.6;
+    /* Starts as 100% (hidden) */
+    transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+circle {
+    transition: stroke-dashoffset 0.5s;
+}
+
+text {
+    font-size: 20px;
+    fill: #333;
+    font-weight: bold;
+}
+
+#descriptionT7-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.circle-progress-bg7 {
+    stroke-width: 10;
+}
+
+.circle-progress-text7 {
+    font-size: 1.5em;
+}
+
+.descriptionT7 {
+    text-align: center;
+}
+
+.descriptionT7 p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Responsive Design for Small Screens for products circular bars */
+@media (max-width: 600px) {
+    .circle-progress-container7 {
+        margin-top: 0;
+    }
+
+    .circle-progress7 {
+        width: 80px;
+        /* Adjust size for smaller screens */
+        height: 80px;
+    }
+
+    .circle-progress-text7 {
+        font-size: 1.2em;
+        /* Adjust font size */
+    }
+
+    .titleLP {
+        font-size: 1em;
+        /* Adjust font size */
+    }
+
+    .descriptionT7 p {
+        font-size: 0.9em;
+        /* Adjust font size for better readability */
+        margin: 10px 0;
+        /* Adjust margins for spacing */
+    }
+
+    /* Ensure the section itself is responsive */
+    .statAnalysis7 {
+        padding: 10px;
+    }
+}
+
+
+
+
+
 
 
 
